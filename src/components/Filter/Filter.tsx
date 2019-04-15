@@ -1,7 +1,8 @@
 import React from 'react';
-import './Filter.scss';
-
 import { ColorsEntity } from '../../shared';
+import {connect} from "react-redux";
+import * as actionCreators from "../../actions";
+import './Filter.scss';
 
 function Filter(props: { colors: ColorsEntity[] }) {
   const colors = props.colors;
@@ -9,7 +10,8 @@ function Filter(props: { colors: ColorsEntity[] }) {
     <section className='tags'>
       <div className='tags__inner'>
         <h1 className='tags__title'>Заметки</h1>
-        {colors.map((color: ColorsEntity) => {
+        {colors &&
+          colors.map((color: ColorsEntity) => {
           const styles = {
             backgroundColor: `${color.color}`
           };
@@ -25,4 +27,10 @@ function Filter(props: { colors: ColorsEntity[] }) {
   );
 }
 
-export default Filter;
+const mapStateToProps=(state: any)=>{
+  return {
+    colors: state.colors
+  };
+};
+
+export default connect(mapStateToProps, actionCreators)(Filter);

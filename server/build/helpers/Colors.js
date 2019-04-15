@@ -4,6 +4,9 @@ class Colors {
     constructor(colors) {
         this.colors = colors;
     }
+    toArray() {
+        return [...this.colors];
+    }
     static factory(colors) {
         return new Colors(colors);
     }

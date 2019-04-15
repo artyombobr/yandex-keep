@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 // import Notes from '../../frontend/src/Notes';
 // import * as data from '../shri.json';
 import notesRouter from './routes/notesRouters';
+import colorsRouter from './routes/colorsRouters';
 
 const app = express();
 // const api = express.Router();
@@ -18,6 +19,7 @@ mongoose.connect("mongodb+srv://admin:5327853@cluster0-m0uoi.mongodb.net/test?re
 });
 
 app.use('/api/cards', notesRouter);
+app.use('/api/colors', colorsRouter);
 
 app.use((req, res) => {
   res.status(404);

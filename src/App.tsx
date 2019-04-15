@@ -1,5 +1,4 @@
-// import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
 import Filter from './components/Filter/Filter';
@@ -11,10 +10,10 @@ const App = () => {
     <div>
       <Header />
       <main className='main'>
-        {/*<Filter colors={data.colors} />*/}
+        <Filter />
         <Notes />
       </main>
-      {/*<Footer />*/}
+      <Footer />
     </div>
   );
 };

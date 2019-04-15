@@ -7,6 +7,10 @@ class Colors {
     this.colors = colors;
   }
 
+  public toArray(): ColorsEntity[] {
+    return [...this.colors];
+  }
+
   public static factory(colors: ColorsEntity[]) {
     return new Colors(colors);
   }

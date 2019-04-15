@@ -18,7 +18,7 @@ export const setNotes = (notes: any) => {
 
 export const fetchAllColors = () => {
   return (dispatch: any) => {
-    return axios.get('/api/cards').then((response) =>{
+    return axios.get('/api/colors').then((response) =>{
       dispatch(setColors(response.data));
     })
   }

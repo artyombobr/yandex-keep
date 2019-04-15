@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer';
 const App = () => {
   return (
     <div>
-      {/*<Header />*/}
+      <Header />
       <main className='main'>
         {/*<Filter colors={data.colors} />*/}
         <Notes />

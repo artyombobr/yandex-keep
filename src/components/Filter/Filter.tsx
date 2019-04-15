@@ -5,7 +5,7 @@ import * as actionCreators from "../../actions";
 import './Filter.scss';
 
 function Filter(props: { colors: ColorsEntity[] }) {
-  const colors = props.colors;
+  const { colors } = props;
   return (
     <section className='tags'>
       <div className='tags__inner'>
@@ -33,4 +33,4 @@ const mapStateToProps=(state: any)=>{
   };
 };
 
-export default connect(mapStateToProps, actionCreators)(Filter);
+export default connect(mapStateToProps)(Filter);

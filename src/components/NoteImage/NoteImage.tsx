@@ -1,7 +1,7 @@
 import * as React from "react";
 
 function NoteImage( props: any) {
-  const {data, note} = props;
+  const {note} = props;
   return (
     <div>4</div>
   )

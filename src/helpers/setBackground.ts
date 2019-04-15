@@ -1,7 +1,7 @@
-function setBackground(data: any, note: any) {
+function setBackground(colors: any, note: any) {
   const opacity = 0.4;
   if (note.color !== undefined) {
-    let hex: string = data.colors[note.color].color;;
+    let hex: string = colors[note.color].color;
     hex = hex.replace('#', '');
     let r: number = parseInt(hex.substring(0, 2), 16);
     let g: number = parseInt(hex.substring(2, 4), 16);

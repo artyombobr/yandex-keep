@@ -5,13 +5,14 @@ import Tags from '../Tags/Tags';
 
 import {ReactComponent as Check} from "../Note/svg/check.svg";
 import {ReactComponent as Edit} from "../Note/svg/edit.svg";
+import {connect} from "react-redux";
 
 
 function NoteFooter(props: any) {
-  const {data, note} = props;
+  const { note, tags} = props;
   return (
     <div className='note__footer'>
-    {note.tags && <Tags data={data} note={note}/>}
+    {tags && <Tags note={note} tags={tags}/>}
     <div className='note__info'>
       <div className='icons'>
         <Check className='icons__item' />
@@ -23,4 +24,10 @@ function NoteFooter(props: any) {
   )
 }
 
-export default NoteFooter;
+const mapStateToProps=(state: any)=>{
+  return {
+    tags: state.tags
+  };
+};
+
+export default connect(mapStateToProps)(NoteFooter);

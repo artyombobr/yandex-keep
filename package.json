@@ -10,6 +10,14 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/jest": "24.0.11",
+    "@types/mongoose": "^5.3.26",
+    "@types/node": "11.13.4",
+    "@types/react": "16.8.13",
+    "@types/react-dom": "16.8.4",
+    "@types/react-redux": "^7.0.6",
+    "@typescript-eslint/parser": "^1.6.0",
     "axios": "^0.18.0",
     "express": "^4.16.4",
     "moment": "^2.24.0",
@@ -20,22 +28,14 @@
     "react-redux": "^7.0.2",
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "typescript": "3.4.3"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "devDependencies": {
-    "@types/express": "^4.16.1",
-    "@types/jest": "24.0.11",
-    "@types/mongoose": "^5.3.26",
-    "@types/node": "11.13.4",
-    "@types/react": "16.8.13",
-    "@types/react-dom": "16.8.4",
-    "@types/react-redux": "^7.0.6",
-    "@typescript-eslint/parser": "^1.6.0",
-    "nodemon": "^1.18.10",
-    "typescript": "3.4.3"
+    "nodemon": "^1.18.10"
   },
   "browserslist": [
     ">0.2%",

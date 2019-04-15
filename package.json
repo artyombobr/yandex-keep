@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js | react-scripts start",
     "start-server": "nodemon server/build/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",

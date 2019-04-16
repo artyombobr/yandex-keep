@@ -99,6 +99,7 @@
   &__text {
     white-space: pre-line;
     margin: 0 24px 12px;
+    overflow-wrap: break-word;
     @include fontsize(16px, 20px, 18px, 22px, $small, $large);
   }
 

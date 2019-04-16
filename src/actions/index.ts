@@ -3,7 +3,7 @@ import {
   SET_ALL_NOTES,
   SET_COLORS,
   SET_TAGS,
-  SET_DISPLAY_NOTES,
+  SET_VISIBLE_NOTES,
   SET_ARCHIVE_NOTES,
   TOGGLE_MODAL,
 } from './types';
@@ -14,7 +14,7 @@ export const fetchAllNotes = () => {
       .get('/api/cards')
       .then(response => {
         dispatch(setAllNotes(response.data));
-        dispatch(setDisplayNotes(response.data));
+        dispatch(setVisibleNotes(response.data));
       })
       .catch((error: any) => {
         throw error;
@@ -75,10 +75,10 @@ export const fetchAddNote = (note: any) => {
   };
 };
 
-export const setDisplayNotes = (displayNotes: any) => {
+export const setVisibleNotes = (visibleNotes: any) => {
   return {
-    type: SET_DISPLAY_NOTES,
-    displayNotes,
+    type: SET_VISIBLE_NOTES,
+    visibleNotes,
   };
 };
 

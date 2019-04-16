@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { setDisplayNotes } from '../../actions';
+import { setVisibleNotes } from '../../actions';
 import getSessionStorage from '../../helpers/getSessionStorage';
 import { ColorsEntity, NotesEntity } from '../../shared';
 import './Filter.scss';
 
 function Filter(props: any) {
-  const { colors, allNotes, dispatch } = props;
+  const { colors, allNotes, dispatch, visibleNotes } = props;
+
   const [activeFilter, setActiveFilter] = useState<number[]>(
     getSessionStorage('filter')
   );
@@ -30,7 +31,7 @@ function Filter(props: any) {
       filterNotes = allNotes;
     }
     sessionStorage.setItem('filter', JSON.stringify(activeFilter));
-    dispatch(setDisplayNotes(filterNotes));
+    dispatch(setVisibleNotes(filterNotes));
   }, [activeFilter, allNotes]);
 
   return (
@@ -63,6 +64,7 @@ const stateToProps = (state: any) => {
   return {
     colors: state.colors,
     allNotes: state.allNotes,
+    visibleNotes: state.visibleNotes,
   };
 };
 

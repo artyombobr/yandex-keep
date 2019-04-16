@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './NoteModal.scss';
+import './addNote.scss';
 import { connect } from 'react-redux';
 import { fetchAddNote, toggleModal } from '../../actions';
 import ColorPicker from './ColorPicker/ColorPicker';
@@ -9,17 +9,15 @@ import { ReactComponent as Check } from './svg/check.svg';
 import { ReactComponent as Picture } from './svg/picture.svg';
 import { NotesEntity } from '../../shared';
 
-const NoteModal = (props: any) => {
+const AddNote = (props: any) => {
   const { colors, tags, dispatch, isVisibleModal } = props;
   const [isToggleColor, setToggleColor] = useState(false);
   const [isToggleTag, setToggleTag] = useState(false);
   const [dataNote, setData] = useState<NotesEntity[] | any>({
     type: '',
-    title: '',
-    text: '',
     tags: [],
     items: [{ text: '' }],
-    color: { color: '#fff', id: 0 },
+    color: { color: '#fff', id: undefined },
     reminder: 0,
   });
 
@@ -97,7 +95,9 @@ const NoteModal = (props: any) => {
       {dataNote.type && (
         <div className="modal__toolbar">
           <input
+            className="modal__date"
             type="datetime-local"
+            value={new Date().toISOString().substr(0, 16)}
             onChange={e => {
               setData({ ...dataNote, reminder: Date.parse(e.target.value) });
             }}
@@ -132,6 +132,7 @@ const NoteModal = (props: any) => {
           )}
           <button
             type="button"
+            className="modal__button"
             onClick={() => dispatch(toggleModal(!isVisibleModal))}
           >
             {'Закрыть'}
@@ -151,6 +152,7 @@ const NoteModal = (props: any) => {
                   reminder: dataNote.reminder,
                 })
               );
+              dispatch(toggleModal(!isVisibleModal));
             }}
           >
             {'Сохранить'}
@@ -169,4 +171,4 @@ const mapStateToProps = (state: any) => {
   };
 };
 
-export default connect(mapStateToProps)(NoteModal);
+export default connect(mapStateToProps)(AddNote);

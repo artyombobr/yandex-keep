@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import setBackground from '../../helpers/setBackground';
 import NoteFooter from '../NoteFooter/NoteFooter';
 import List from '../List/List';

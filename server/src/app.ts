@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { response } from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import path from 'path';
@@ -31,12 +31,14 @@ app.use('/api/cards', notesRouter);
 app.use('/api/colors', colorsRouter);
 app.use('/api/tags', tagsRouter);
 
+app.use(express.static(path.resolve('build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('build', 'index.html'));
+});
+
 app.use((req, res) => {
   res.status(404);
   res.send(`<h1>Page not found</h1>`);
 });
-
-app.use('/', express.static(path.join(__dirname, '../../build')));
-console.log(path.resolve(__dirname, '../../build'));
 
 export default app;

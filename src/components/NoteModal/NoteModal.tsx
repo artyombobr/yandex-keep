@@ -80,7 +80,7 @@ const NoteModal = (props: any) => {
           }}
         />
         {!dataNote.type && (
-          <div className="modal__type" title="Добавить список">
+          <div className="modal__type_list" title="Добавить список">
             <Check
               onClick={() => {
                 setData({ ...dataNote, type: 'list' });
@@ -89,9 +89,10 @@ const NoteModal = (props: any) => {
           </div>
         )}
         {!dataNote.type && (
-          <div className="modal__type" title="Добавить картинку">
+          <label className="modal__type_image" title="Добавить картинку">
             <Picture />
-          </div>
+            <input hidden type="file" />
+          </label>
         )}
       </div>
       {dataNote.type && (
@@ -102,10 +103,10 @@ const NoteModal = (props: any) => {
               setData({ ...dataNote, reminder: Date.parse(e.target.value) });
             }}
           />
-          <button type="button" onClick={() => setToggleColor(!isToggleColor)}>
+          <button className="modal__button" type="button" onClick={() => setToggleColor(!isToggleColor)}>
             {'Цвета'}
           </button>
-          <button type="button" onClick={() => setToggleTag(!isToggleTag)}>
+          <button className="modal__button" type="button" onClick={() => setToggleTag(!isToggleTag)}>
             {'Метки'}
           </button>
           {isToggleColor && (
@@ -124,6 +125,7 @@ const NoteModal = (props: any) => {
           )}
           <button
             type="button"
+            className="modal__button"
             onClick={() => {
               dispatch(
                 fetchAddNote({

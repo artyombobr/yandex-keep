@@ -26,11 +26,13 @@ app.use(body_parser_1.default.json());
 app.use('/api/cards', notesRouters_1.default);
 app.use('/api/colors', colorsRouters_1.default);
 app.use('/api/tags', tagsRouter_1.default);
+app.use(express_1.default.static(path_1.default.resolve('build')));
+app.get('*', (req, res) => {
+    res.sendFile(path_1.default.resolve('build', 'index.html'));
+});
 app.use((req, res) => {
     res.status(404);
     res.send(`<h1>Page not found</h1>`);
 });
-app.use('/', express_1.default.static(path_1.default.join(__dirname, '../../build')));
-console.log(path_1.default.resolve(__dirname, '../../build'));
 exports.default = app;
 //# sourceMappingURL=app.js.map

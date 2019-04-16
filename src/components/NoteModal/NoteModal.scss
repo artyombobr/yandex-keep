@@ -16,9 +16,21 @@
     margin-bottom: 24px;
   }
 
+  &__button {
+    background-color: #FC0;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+
   &__type {
     display: flex;
     justify-content: space-between;
+    //&:last-child {
+    //  margin-left: 10px;
+    //}
 
     &_text {
       width: 100%;
@@ -27,6 +39,10 @@
       margin-bottom: 24px;
       resize: none;
       background-color: transparent;
+    }
+
+    &_image {
+      margin-left: 10px;
     }
   }
 }

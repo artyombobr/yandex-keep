@@ -1,31 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
+import classNames from 'classnames';
 import { setDisplayNotes } from '../../actions';
+// eslint-disable-next-line no-unused-vars
 import { ColorsEntity } from '../../shared';
 import './Filter.scss';
 
 function Filter(props: any) {
   const { colors, allNotes, dispatch } = props;
-  const [count, setCount] = useState<number[]>([]);
+  const [activeFilter, setActiveFilter] = useState<number[]>([]);
+
   const handleColorClick = (id: number) => {
-    if (count.indexOf(id) === -1) {
-      setCount([...count, id]);
+    if (activeFilter.indexOf(id) === -1) {
+      setActiveFilter([...activeFilter, id]);
     } else {
-      setCount(count.filter(idFilter => idFilter !== id));
+      setActiveFilter(activeFilter.filter(idFilter => idFilter !== id));
     }
   };
+
   useEffect(() => {
     let filterNotes = allNotes.filter((note: any) => {
-      if (count.indexOf(note.color) !== -1) {
+      if (activeFilter.indexOf(note.color) !== -1) {
         return note;
       }
       return false;
     });
-    if (!count.length) {
+    if (!activeFilter.length) {
       filterNotes = allNotes;
     }
     dispatch(setDisplayNotes(filterNotes));
-  }, [count]);
+  }, [activeFilter]);
 
   return (
     <section className="tags">
@@ -36,11 +40,13 @@ function Filter(props: any) {
             const styles = {
               backgroundColor: `${color.color}`,
             };
+            const style =
+              activeFilter.indexOf(color.id) !== -1 ? ' tag__span_active' : '';
             return (
               <div key={color.id} className="tag">
                 <button
                   onClick={() => handleColorClick(color.id)}
-                  className="tag__span"
+                  className={classNames('tag__span', style)}
                   style={styles}
                   type="button"
                 />

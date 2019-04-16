@@ -3,7 +3,6 @@
 .tags {
   overflow: hidden;
   height: 64px;
-  margin-top: 80px;
 
   &__inner {
     display: flex;
@@ -60,11 +59,16 @@
     border-bottom-style: solid;
     transform: translate(3px, 0) rotate(-45deg);
   }
-}
 
-input:checked ~ .tag__span {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
-  opacity: 1;
+  &_active {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    opacity: 1;
+  }
+
+  .tag__span::after ~ &_active {
+    display: block;
+  }
+
 }
 
 input:checked ~ .tag__span::after {
@@ -73,8 +77,6 @@ input:checked ~ .tag__span::after {
 
 @media (min-width: 1200px) {
   .tags {
-    margin-top: 96px;
-
     &__title {
       display: block;
       margin-left: 173px;

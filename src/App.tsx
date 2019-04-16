@@ -1,22 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header';
-import Filter from './components/Filter/Filter';
-import Notes from './components/Notes/Notes';
+import NotesContainers from './containers/NotesContainers';
+import ArchiveContainers from './containers/ArchiveContainers';
 import Footer from './components/Footer/Footer';
-import NoteModal from './components/NoteModal/NoteModal';
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      {/* <NoteModal /> */}
       <main className="main">
-        <Filter />
-        <Notes />
+        <Switch>
+          <Route exact path="/archive" component={ArchiveContainers} />
+          <Route exact path="/" component={NotesContainers} />
+        </Switch>
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 };
 

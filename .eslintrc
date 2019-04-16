@@ -16,7 +16,10 @@
       1,
       { "extensions": [".ts", ".tsx"] }
     ],
+    "no-plusplus": "warn",
     "import/no-unresolved": false,
+    "jsx-a11y/label-has-associated-control": false,
+    "jsx-a11y/label-has-for": false,
     "arrow-parens": [2, "as-needed"],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "prefer-template": "off",

@@ -10,6 +10,16 @@ body {
   background-color: #F2F2F2;
 }
 
+.main {
+  margin-top: 80px;
+}
+
 a {
   color: #000;
+}
+
+@media (min-width: 1200px) {
+  .main {
+    margin-top: 96px;
+  }
 }

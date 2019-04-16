@@ -1,5 +1,6 @@
 import {
   SET_ALL_NOTES,
+  SET_ARCHIVE_NOTES,
   SET_COLORS,
   SET_DISPLAY_NOTES,
   SET_TAGS,
@@ -16,6 +17,8 @@ const mainReducer = (state = defaultState, action: any) => {
       return { ...state, allNotes: action.allNotes };
     case SET_DISPLAY_NOTES:
       return { ...state, displayNotes: action.displayNotes };
+    case SET_ARCHIVE_NOTES:
+      return { ...state, archiveNotes: action.archiveNotes };
     case SET_COLORS:
       return { ...state, colors: action.colors };
     case SET_TAGS:

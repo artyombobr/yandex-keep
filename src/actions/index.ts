@@ -4,6 +4,7 @@ import {
   SET_COLORS,
   SET_TAGS,
   SET_DISPLAY_NOTES,
+  SET_ARCHIVE_NOTES,
 } from './types';
 
 export const fetchAllNotes = () => {
@@ -20,10 +21,30 @@ export const fetchAllNotes = () => {
   };
 };
 
+export const fetchArchiveNotes = () => {
+  return (dispatch: any) => {
+    return axios
+      .get('/api/cards/archive')
+      .then(response => {
+        dispatch(setArchiveNotes(response.data));
+      })
+      .catch((error: any) => {
+        throw error;
+      });
+  };
+};
+
 export const setAllNotes = (allNotes: any) => {
   return {
     type: SET_ALL_NOTES,
     allNotes,
+  };
+};
+
+export const setArchiveNotes = (archiveNotes: any) => {
+  return {
+    type: SET_ARCHIVE_NOTES,
+    archiveNotes,
   };
 };
 

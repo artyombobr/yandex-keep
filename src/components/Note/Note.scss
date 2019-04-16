@@ -33,6 +33,10 @@
     &_list {
       margin-bottom: 24px;
     }
+
+    &_image {
+      padding: 0 0 24px;
+    }
   }
 
   &__white {
@@ -72,6 +76,7 @@
   &__image img {
     width: 100%;
     border-radius: 16px;
+    margin-bottom: 12px;
   }
 
   &__title {

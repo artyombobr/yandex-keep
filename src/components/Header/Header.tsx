@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Logo from '../Logo/Logo';
 import Search from '../Search/Search';
@@ -17,16 +17,21 @@ const Header = (props: any) => {
       </label>
       <div className="header__right right">
         <div className="right__menu menu">
-          <Link to="/">
-            <button className="menu__link" type="button">
-              {'Активные'}
-            </button>
-          </Link>
-          <Link to="/archive">
-            <button className="menu__link menu__link_gray" type="button">
-              {'Архив'}
-            </button>
-          </Link>
+          <NavLink
+            exact
+            to="/"
+            className="menu__link"
+            activeClassName="menu__link_active"
+          >
+            {'Активные'}
+          </NavLink>
+          <NavLink
+            to="/archive"
+            className="menu__link"
+            activeClassName="menu__link_active"
+          >
+            {'Архив'}
+          </NavLink>
           <button
             type="button"
             className="menu__button"

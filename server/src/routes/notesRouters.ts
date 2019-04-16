@@ -6,6 +6,7 @@ import {
   editNote,
   getArchive,
   getNotes,
+  uploadImage,
 } from '../controllers/notesControllers';
 
 const router: Router = express.Router();
@@ -20,5 +21,6 @@ router
   .patch(editNote);
 router.route('/archive').get(getArchive);
 router.route('/archive/:id').post(addToArchive);
+router.route('/upload').post(uploadImage);
 
 export default router;

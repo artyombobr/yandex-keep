@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { setDisplayNotes } from '../../actions';
 import getSessionStorage from '../../helpers/getSessionStorage';
-// eslint-disable-next-line no-unused-vars
-import { ColorsEntity } from '../../shared';
+import { ColorsEntity, NotesEntity } from '../../shared';
 import './Filter.scss';
 
 function Filter(props: any) {
@@ -32,7 +31,7 @@ function Filter(props: any) {
     }
     sessionStorage.setItem('filter', JSON.stringify(activeFilter));
     dispatch(setDisplayNotes(filterNotes));
-  }, [activeFilter]);
+  }, [activeFilter, allNotes]);
 
   return (
     <section className="tags">

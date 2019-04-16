@@ -16,5 +16,6 @@ router
     .patch(notesControllers_1.editNote);
 router.route('/archive').get(notesControllers_1.getArchive);
 router.route('/archive/:id').post(notesControllers_1.addToArchive);
+router.route('/upload').post(notesControllers_1.uploadImage);
 exports.default = router;
 //# sourceMappingURL=notesRouters.js.map

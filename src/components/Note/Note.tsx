@@ -13,7 +13,7 @@ function Note(props: any) {
   const NoteType: { [key: string]: any } = {
     text: <NoteText note={note} colors={colors} />,
     list: <NoteList note={note} colors={colors} />,
-    image: <NoteImage />,
+    image: <NoteImage note={note} colors={colors} />,
   };
 
   return (

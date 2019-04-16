@@ -39,7 +39,6 @@ exports.addToArchive = (req, res) => {
     }
 };
 exports.addNote = (req, res) => {
-    // console.log(req.body);
     const note = req.body;
     if (note) {
         notes.addNote(note);
@@ -73,5 +72,11 @@ exports.deleteNote = (req, res) => {
 exports.getNoteById = (req, res) => {
     const { id } = req.query;
     res.status(200).json({ id });
+};
+exports.uploadImage = (req, res) => {
+    if (req.files) {
+        console.log(req.files);
+    }
+    res.status(200).json({ status: 'good' });
 };
 //# sourceMappingURL=notesControllers.js.map

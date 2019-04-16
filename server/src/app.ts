@@ -1,5 +1,6 @@
 import express, { response } from 'express';
 import mongoose from 'mongoose';
+import fileUpload from 'express-fileupload';
 import bodyParser from 'body-parser';
 import path from 'path';
 import notesRouter from './routes/notesRouters';
@@ -26,6 +27,7 @@ mongoose
     }
   );
 
+app.use(fileUpload());
 app.use(bodyParser.json());
 app.use('/api/cards', notesRouter);
 app.use('/api/colors', colorsRouter);

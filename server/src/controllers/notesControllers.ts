@@ -39,7 +39,6 @@ export const addToArchive = (req: Request, res: Response) => {
 };
 
 export const addNote = (req: Request, res: Response) => {
-  // console.log(req.body);
   const note = req.body;
   if (note) {
     notes.addNote(note);
@@ -73,4 +72,11 @@ export const deleteNote = (req: Request, res: Response) => {
 export const getNoteById = (req: Request, res: Response) => {
   const { id } = req.query;
   res.status(200).json({ id });
+};
+
+export const uploadImage = (req: Request, res: Response) => {
+  if (req.files) {
+    console.log(req.files);
+  }
+  res.status(200).json({ status: 'good' });
 };

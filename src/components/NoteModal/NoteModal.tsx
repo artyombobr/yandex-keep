@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './NoteModal.scss';
 import { connect } from 'react-redux';
-import { fetchAddNote } from '../../actions';
+import { fetchAddNote, toggleModal } from '../../actions';
 import ColorPicker from './ColorPicker/ColorPicker';
 import TagsPicker from './TagsPicker/TagsPicker';
 
@@ -10,10 +10,9 @@ import { ReactComponent as Picture } from './svg/picture.svg';
 import { NotesEntity } from '../../shared';
 
 const NoteModal = (props: any) => {
-  const { colors, tags, dispatch } = props;
+  const { colors, tags, dispatch, isVisibleModal } = props;
   const [isToggleColor, setToggleColor] = useState(false);
   const [isToggleTag, setToggleTag] = useState(false);
-
   const [dataNote, setData] = useState<NotesEntity[] | any>({
     type: '',
     title: '',
@@ -103,10 +102,18 @@ const NoteModal = (props: any) => {
               setData({ ...dataNote, reminder: Date.parse(e.target.value) });
             }}
           />
-          <button className="modal__button" type="button" onClick={() => setToggleColor(!isToggleColor)}>
+          <button
+            className="modal__button"
+            type="button"
+            onClick={() => setToggleColor(!isToggleColor)}
+          >
             {'Цвета'}
           </button>
-          <button className="modal__button" type="button" onClick={() => setToggleTag(!isToggleTag)}>
+          <button
+            className="modal__button"
+            type="button"
+            onClick={() => setToggleTag(!isToggleTag)}
+          >
             {'Метки'}
           </button>
           {isToggleColor && (
@@ -123,6 +130,12 @@ const NoteModal = (props: any) => {
               tags={tags}
             />
           )}
+          <button
+            type="button"
+            onClick={() => dispatch(toggleModal(!isVisibleModal))}
+          >
+            {'Закрыть'}
+          </button>
           <button
             type="button"
             className="modal__button"
@@ -152,6 +165,7 @@ const mapStateToProps = (state: any) => {
   return {
     tags: state.tags,
     colors: state.colors,
+    isVisibleModal: state.isVisibleModal,
   };
 };
 

@@ -50,7 +50,7 @@ exports.addNote = (req, res) => {
 };
 exports.editNote = (req, res) => {
     const { id } = req.params;
-    const { note } = req.body;
+    const note = req.body;
     const result = notes.editNote(Number(id), note);
     if (result) {
         res.status(200).json('success');

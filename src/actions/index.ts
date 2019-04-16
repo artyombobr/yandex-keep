@@ -53,9 +53,7 @@ export const fetchNoteToArchive = (id: any) => {
   return (dispatch: any) => {
     return axios
       .post('/api/cards/archive/' + id)
-      .then(response => {
-        dispatch(fetchAllNotes());
-      })
+      .then(dispatch(fetchAllNotes()))
       .catch((error: any) => {
         throw error;
       });
@@ -66,10 +64,19 @@ export const fetchAddNote = (note: any) => {
   return (dispatch: any) => {
     return axios
       .post('/api/cards/', note)
-      .then(response => {
-        dispatch(fetchAllNotes());
-      })
-      .catch((error: any) => {
+      .then(dispatch(fetchAllNotes()))
+      .catch(error => {
+        throw error;
+      });
+  };
+};
+
+export const fetchEditNote = (id: any, note: any) => {
+  return (dispatch: any) => {
+    return axios
+      .patch('/api/cards/' + id, note)
+      .then(dispatch(fetchAllNotes()))
+      .catch(error => {
         throw error;
       });
   };

@@ -41,9 +41,10 @@ class Notes {
     return false;
   }
 
-  public editNote(id: number, note: NotesEntity): boolean {
+  public editNote(id: number, newData: NotesEntity): boolean {
     if (this.notes.length > id) {
-      this.notes[id] = note;
+      const index = this.notes.findIndex(note => note.id === Number(id));
+      this.notes[index] = Object.assign(this.notes[index], newData);
       return true;
     }
     return false;

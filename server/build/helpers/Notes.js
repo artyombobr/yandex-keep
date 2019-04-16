@@ -25,9 +25,10 @@ class Notes {
         }
         return false;
     }
-    editNote(id, note) {
+    editNote(id, newData) {
         if (this.notes.length > id) {
-            this.notes[id] = note;
+            const index = this.notes.findIndex(note => note.id === Number(id));
+            this.notes[index] = Object.assign(this.notes[index], newData);
             return true;
         }
         return false;

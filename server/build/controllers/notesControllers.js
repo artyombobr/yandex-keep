@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const Colors_1 = __importDefault(require("../helpers/Colors"));
 const Notes_1 = __importDefault(require("../helpers/Notes"));
-const shri_json_1 = __importDefault(require("./../shri.json"));
+const shri_json_1 = __importDefault(require("../shri.json"));
 const notes = Notes_1.default.factory(shri_json_1.default.notes);
 const colors = Colors_1.default.factory(shri_json_1.default.colors);
 exports.getNotes = (req, res) => {
@@ -13,18 +13,20 @@ exports.getNotes = (req, res) => {
     color = Number(color);
     if (color) {
         if (colors.checkColor(color)) {
-            res.status(200).json(notes.filter((note) => ((note.color === color) && (note.archive === false))));
+            res
+                .status(200)
+                .json(notes.filter(note => note.color === color && note.archive === false));
         }
         else {
             res.status(400).json('Incorrect color');
         }
     }
     else {
-        res.status(200).json(notes.filter((note) => note.archive === false));
+        res.status(200).json(notes.filter(note => note.archive === false));
     }
 };
 exports.getArchive = (req, res) => {
-    res.status(200).json(notes.filter((note) => note.archive === true));
+    res.status(200).json(notes.filter(note => note.archive === true));
 };
 exports.addToArchive = (req, res) => {
     const { id } = req.params;
@@ -37,10 +39,11 @@ exports.addToArchive = (req, res) => {
     }
 };
 exports.addNote = (req, res) => {
-    const { note } = req.query;
+    // console.log(req.body);
+    const note = req.body;
     if (note) {
-        const newNote = notes.addNote(note);
-        res.status(200).json({ status: 'success', note: newNote });
+        notes.addNote(note);
+        res.status(200).json({ status: 'success', note });
     }
     else {
         res.status(400).json({ status: 'fail' });

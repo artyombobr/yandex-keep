@@ -17,6 +17,8 @@
       { "extensions": [".ts", ".tsx"] }
     ],
     "no-plusplus": "warn",
+    "no-param-reassign": "warn",
+    "import/prefer-default-export": "warn",
     "import/no-unresolved": false,
     "jsx-a11y/label-has-associated-control": false,
     "jsx-a11y/label-has-for": false,

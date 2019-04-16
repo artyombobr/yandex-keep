@@ -4,6 +4,7 @@ import {
   SET_COLORS,
   SET_DISPLAY_NOTES,
   SET_TAGS,
+  TOGGLE_MODAL,
 } from '../actions/types';
 
 const defaultState = {
@@ -23,6 +24,8 @@ const mainReducer = (state = defaultState, action: any) => {
       return { ...state, colors: action.colors };
     case SET_TAGS:
       return { ...state, tags: action.tags };
+    case TOGGLE_MODAL:
+      return { ...state, isVisibleModal: action.isVisibleModal };
     default:
       return state;
   }

@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import classNames from 'classnames';
 import { setDisplayNotes } from '../../actions';
+import getSessionStorage from '../../helpers/getSessionStorage';
 // eslint-disable-next-line no-unused-vars
 import { ColorsEntity } from '../../shared';
 import './Filter.scss';
 
 function Filter(props: any) {
   const { colors, allNotes, dispatch } = props;
-  const [activeFilter, setActiveFilter] = useState<number[]>([]);
+  const [activeFilter, setActiveFilter] = useState<number[]>(
+    getSessionStorage('filter')
+  );
 
   const handleColorClick = (id: number) => {
     if (activeFilter.indexOf(id) === -1) {
@@ -28,6 +30,7 @@ function Filter(props: any) {
     if (!activeFilter.length) {
       filterNotes = allNotes;
     }
+    sessionStorage.setItem('filter', JSON.stringify(activeFilter));
     dispatch(setDisplayNotes(filterNotes));
   }, [activeFilter]);
 
@@ -40,17 +43,16 @@ function Filter(props: any) {
             const styles = {
               backgroundColor: `${color.color}`,
             };
-            const style =
-              activeFilter.indexOf(color.id) !== -1 ? ' tag__span_active' : '';
+            const checked = activeFilter.indexOf(color.id) !== -1;
             return (
-              <div key={color.id} className="tag">
-                <button
-                  onClick={() => handleColorClick(color.id)}
-                  className={classNames('tag__span', style)}
-                  style={styles}
-                  type="button"
+              <label key={color.id} className="tag">
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={() => handleColorClick(color.id)}
                 />
-              </div>
+                <span className="tag__span" style={styles} />
+              </label>
             );
           })}
       </div>

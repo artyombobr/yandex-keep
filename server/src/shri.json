@@ -69,6 +69,7 @@
   ],
   "notes": [
     {
+      "id": 10,
       "type": "list",
       "title": "Список покупок",
       "tags": [
@@ -177,6 +178,7 @@
       "created": 1551780000000
     },
     {
+      "id": 9,
       "type": "text",
       "title": "Завтра дедлайн",
       "text": "Не забыть сверстать макет",
@@ -189,6 +191,7 @@
       "created": 1551714600000
     },
     {
+      "id": 8,
       "type": "text",
       "text": "Купить чайник с Bluetooth\nВидел у Xiaomi на днях",
       "tags": [
@@ -198,6 +201,7 @@
       "created": 1551593220000
     },
     {
+      "id": 7,
       "type": "text",
       "title": "Генератор котов",
       "attachments": [
@@ -210,6 +214,7 @@
       "created": 1551529380000
     },
     {
+      "id": 6,
       "type": "text",
       "title": "Нагенерил смешных котов",
       "text": "Американец научил нейросети генерировать фото кошек. Получилось не оч",
@@ -236,6 +241,7 @@
       "created": 1551265200000
     },
     {
+      "id": 5,
       "type": "text",
       "title": "Скидки в Виталюре",
       "text": "На филе лосося и картоху",
@@ -247,6 +253,7 @@
       "created": 1550653200000
     },
     {
+      "id": 4,
       "type": "text",
       "text": "Реферат до 2 апреля (300 терминов, аннотация, основная, заключение, список литературы)\nПеревод 40к знаков к зачету, 40к к экзамену\nТест 1 и 2\n\nПодготовка кадров зарубежом (юнит 2)\nНаучно исследовательская работа магистранта (юнит 2)\nРоль науки (юнит 1)\n10-15 предложений минимум",
       "tags": [
@@ -258,6 +265,7 @@
       "created": 1549189500000
     },
     {
+      "id": 3,
       "type": "image",
       "url": "https://avatars.mds.yandex.net/get-pdb/1534889/a869b7ef-32da-41e7-8703-326ae860e67f/orig",
       "tags": [
@@ -267,6 +275,7 @@
       "created": 1548969900000
     },
     {
+      "id": 2,
       "type": "text",
       "title": "Выучить латынь",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -278,6 +287,7 @@
       "created": 1543798200000
     },
     {
+      "id": 1,
       "type": "text",
       "text": "Теперь ищу только в яндексе",
       "attachments": [
@@ -297,6 +307,7 @@
       "created": 1536310800000
     },
     {
+      "id": 0,
       "type": "text",
       "title": "Не забыть выгулять Сиба-Ину",
       "color": 3,

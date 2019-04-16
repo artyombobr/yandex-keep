@@ -19,6 +19,7 @@ export interface ColorsEntity {
 }
 
 export interface NotesEntity {
+  id: number;
   type: string;
   title?: string;
   tags?: number[];

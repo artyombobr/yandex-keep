@@ -5,6 +5,7 @@ import {
   SET_TAGS,
   SET_DISPLAY_NOTES,
   SET_ARCHIVE_NOTES,
+  TOGGLE_MODAL,
 } from './types';
 
 export const fetchAllNotes = () => {
@@ -48,6 +49,32 @@ export const setArchiveNotes = (archiveNotes: any) => {
   };
 };
 
+export const fetchNoteToArchive = (id: any) => {
+  return (dispatch: any) => {
+    return axios
+      .post('/api/cards/archive/' + id)
+      .then(response => {
+        dispatch(fetchAllNotes());
+      })
+      .catch((error: any) => {
+        throw error;
+      });
+  };
+};
+
+export const fetchAddNote = (note: any) => {
+  return (dispatch: any) => {
+    return axios
+      .post('/api/cards/', note)
+      .then(response => {
+        dispatch(fetchAllNotes());
+      })
+      .catch((error: any) => {
+        throw error;
+      });
+  };
+};
+
 export const setDisplayNotes = (displayNotes: any) => {
   return {
     type: SET_DISPLAY_NOTES,
@@ -82,5 +109,12 @@ export const setTags = (tags: any) => {
   return {
     type: SET_TAGS,
     tags,
+  };
+};
+
+export const toggleModal = (flag: boolean) => {
+  return {
+    type: TOGGLE_MODAL,
+    isVisibleModal: flag,
   };
 };

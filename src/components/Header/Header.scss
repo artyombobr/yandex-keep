@@ -40,11 +40,15 @@
   margin-bottom: 16px;
 
   &__link{
+    width: 100%;
     font-size: 16px;
     line-height: 32px;
     margin-bottom: 16px;
     text-align: center;
     text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
     transition: color .4s;
 
     &_gray {
@@ -151,9 +155,6 @@
     &__link {
       margin-left: 32px;
       margin-bottom: 0;
-      background-color: white;
-      border: none;
-      outline: none;
     }
 
     &__button {

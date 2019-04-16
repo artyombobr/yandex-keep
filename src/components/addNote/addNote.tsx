@@ -37,7 +37,8 @@ const AddNote = (props: any) => {
   console.log(dataNote);
 
   return (
-    <div className="modal" style={{ backgroundColor: dataNote.color.color }}>
+    <div className="modal">
+      <div className="modal__inner" style={{ backgroundColor: dataNote.color.color }}>
       {dataNote.type && (
         <input
           className="modal__title"
@@ -159,6 +160,7 @@ const AddNote = (props: any) => {
           </button>
         </div>
       )}
+    </div>
     </div>
   );
 };

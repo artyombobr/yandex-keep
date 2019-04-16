@@ -32,7 +32,12 @@ function Note(props: any) {
         colors={colors}
       />
     ),
-    image: <NoteImage note={note} colors={colors} />,
+    image: <NoteImage
+      isEdit={isEdit}
+      setEdit={setEdit}
+      note={note}
+      colors={colors}
+    />,
   };
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Logo from '../Logo/Logo';
@@ -8,10 +8,17 @@ import { toggleModal } from '../../actions';
 
 const Header = (props: any) => {
   const { isVisibleModal, dispatch } = props;
+  const [isOpenMenu, setOpenMenu] = useState(false);
   return (
     <header className="header">
       <Logo className="header__logo" color="#000" />
-      <input className="header__checkbox" type="checkbox" id="toggle" />
+      <input
+        className="header__checkbox"
+        type="checkbox"
+        id="toggle"
+        checked={isOpenMenu}
+        onChange={() => setOpenMenu(!isOpenMenu)}
+      />
       <label className="header__hamburger" htmlFor="toggle">
         <span className="navicon" />
       </label>
@@ -35,7 +42,10 @@ const Header = (props: any) => {
           <button
             type="button"
             className="menu__button"
-            onClick={() => dispatch(toggleModal(!isVisibleModal))}
+            onClick={() => {
+              setOpenMenu(false);
+              dispatch(toggleModal(!isVisibleModal));
+            }}
           >
             {'Добавить'}
           </button>

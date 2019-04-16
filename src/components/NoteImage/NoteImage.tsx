@@ -3,7 +3,7 @@ import NoteFooter from '../NoteFooter/NoteFooter';
 import setBackground from '../../helpers/setBackground';
 
 function NoteImage(props: any) {
-  const { note, colors } = props;
+  const { note, colors, isEdit, setEdit } = props;
   return (
     <div
       className="note__main note__main_image"
@@ -26,7 +26,7 @@ function NoteImage(props: any) {
           <img src="https://via.placeholder.com/1020" alt="Изображение" />
         </picture>
       </div>
-      <NoteFooter note={note} />
+      <NoteFooter note={note} isEdit={isEdit} setEdit={setEdit} />
     </div>
   );
 }

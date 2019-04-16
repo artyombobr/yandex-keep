@@ -1,6 +1,25 @@
 {
   "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint-config-airbnb",
+    "react-app",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "useJSXTextNode": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".ts", ".tsx"] }
+    ],
+    "import/no-unresolved": false,
+    "arrow-parens": [2, "as-needed"],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "prefer-template": "off",
+    "prettier/prettier": ["error", { "singleQuote": true }]
   }
 }

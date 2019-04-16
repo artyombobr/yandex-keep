@@ -9,10 +9,9 @@ function setBackground(colors: any, note: any) {
     r = Math.round(r * opacity + 255 * (1 - opacity));
     g = Math.round(g * opacity + 255 * (1 - opacity));
     b = Math.round(b * opacity + 255 * (1 - opacity));
-    return {backgroundColor: 'rgb(' + r + ',' + g + ',' + b + ')'};
-  } else {
-    return ({backgroundColor: '#fff'});
+    return { backgroundColor: 'rgb(' + r + ',' + g + ',' + b + ')' };
   }
+  return { backgroundColor: '#fff' };
 }
 
 export default setBackground;

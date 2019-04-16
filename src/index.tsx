@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'
+import './index.css';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 
 import App from './App';
 import reducers from './reducers';
-import {fetchAllNotes, fetchAllColors, fetchAllTags} from "./actions";
+import { fetchAllNotes, fetchAllColors, fetchAllTags } from './actions';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -19,9 +19,9 @@ store.dispatch(fetchAllTags());
 
 ReactDOM.render(
   <Provider store={store}>
-      <App />
+    <App />
   </Provider>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 serviceWorker.unregister();

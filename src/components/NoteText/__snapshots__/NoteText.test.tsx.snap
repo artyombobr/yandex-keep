@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteText correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NoteText
+    colors={
+      Array [
+        Object {
+          "color": "#E84747",
+          "id": 0,
+        },
+      ]
+    }
+    note={
+      Object {
+        "color": 0,
+        "created": 1551593220000,
+        "id": 1,
+        "size": "s",
+        "tags": Array [
+          0,
+        ],
+        "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+        "type": "text",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        undefined,
+        <div
+          className="note__text"
+        >
+          Купить чайник с Bluetooth
+Видел у Xiaomi на днях
+        </div>,
+        <UNDEFINED
+          note={
+            Object {
+              "color": 0,
+              "created": 1551593220000,
+              "id": 1,
+              "size": "s",
+              "tags": Array [
+                0,
+              ],
+              "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+              "type": "text",
+            }
+          }
+        />,
+      ],
+      "className": "note__main",
+      "style": Object {
+        "backgroundColor": "rgb(246,181,181)",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+          "className": "note__text",
+        },
+        "ref": null,
+        "rendered": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "note": Object {
+            "color": 0,
+            "created": 1551593220000,
+            "id": 1,
+            "size": "s",
+            "tags": Array [
+              0,
+            ],
+            "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+            "type": "text",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(NoteFooter)",
+          "type": [Function],
+          Symbol(Symbol.hasInstance): [Function],
+        },
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          undefined,
+          <div
+            className="note__text"
+          >
+            Купить чайник с Bluetooth
+Видел у Xiaomi на днях
+          </div>,
+          <UNDEFINED
+            note={
+              Object {
+                "color": 0,
+                "created": 1551593220000,
+                "id": 1,
+                "size": "s",
+                "tags": Array [
+                  0,
+                ],
+                "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+                "type": "text",
+              }
+            }
+          />,
+        ],
+        "className": "note__main",
+        "style": Object {
+          "backgroundColor": "rgb(246,181,181)",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+            "className": "note__text",
+          },
+          "ref": null,
+          "rendered": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "note": Object {
+              "color": 0,
+              "created": 1551593220000,
+              "id": 1,
+              "size": "s",
+              "tags": Array [
+                0,
+              ],
+              "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+              "type": "text",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.memo),
+            "WrappedComponent": [Function],
+            "compare": null,
+            "displayName": "Connect(NoteFooter)",
+            "type": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

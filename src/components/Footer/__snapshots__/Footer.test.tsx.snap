@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="footer__null"
+        >
+          Яндекс ШРИ
+        </div>,
+        <p
+          className="footer__name"
+        >
+          Артём Бобр
+        </p>,
+        <p
+          className="footer__copyright"
+        >
+          Яндекс ШРИ
+        </p>,
+      ],
+      "className": "footer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Яндекс ШРИ",
+          "className": "footer__null",
+        },
+        "ref": null,
+        "rendered": "Яндекс ШРИ",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Артём Бобр",
+          "className": "footer__name",
+        },
+        "ref": null,
+        "rendered": "Артём Бобр",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Яндекс ШРИ",
+          "className": "footer__copyright",
+        },
+        "ref": null,
+        "rendered": "Яндекс ШРИ",
+        "type": "p",
+      },
+    ],
+    "type": "footer",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="footer__null"
+          >
+            Яндекс ШРИ
+          </div>,
+          <p
+            className="footer__name"
+          >
+            Артём Бобр
+          </p>,
+          <p
+            className="footer__copyright"
+          >
+            Яндекс ШРИ
+          </p>,
+        ],
+        "className": "footer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Яндекс ШРИ",
+            "className": "footer__null",
+          },
+          "ref": null,
+          "rendered": "Яндекс ШРИ",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Артём Бобр",
+            "className": "footer__name",
+          },
+          "ref": null,
+          "rendered": "Артём Бобр",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Яндекс ШРИ",
+            "className": "footer__copyright",
+          },
+          "ref": null,
+          "rendered": "Яндекс ШРИ",
+          "type": "p",
+        },
+      ],
+      "type": "footer",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

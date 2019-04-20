@@ -1,0 +1,61 @@
+@import "../../shared";
+
+.checkbox {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 12px;
+  margin-right: 12px;
+
+  & input {
+    display: none;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__span {
+    line-height: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    @include fontsize(16px, 18px, 20px, 22px, $small, $large);
+
+    &::before {
+      content: "";
+      display: inline-block;
+      box-sizing: border-box;
+      vertical-align: top;
+      margin-right: 12px;
+      border-radius: 3px;
+      width: 18px;
+      height: 18px;
+      background-color: #D9D9D9;
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 4px;
+      left: 1px;
+      width: 8px;
+      height: 4px;
+      border: solid 2px;
+      border-right: none;
+      border-top: none;
+      transform: translate(3px, 0) rotate(-45deg);
+    }
+  }
+}
+
+input:checked ~ .checkbox__span {
+  text-decoration: line-through;
+}
+
+input:checked ~ .checkbox__span::after {
+  display: block;
+}
+
+input:checked ~ .checkbox__span::before {
+  background-color: #FC0;
+}

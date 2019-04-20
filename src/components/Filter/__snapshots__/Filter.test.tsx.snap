@@ -24,14 +24,6 @@ ShallowWrapper {
           "color": "#3ae800",
           "id": 0,
         },
-        Object {
-          "color": "#0003f2",
-          "id": 1,
-        },
-        Object {
-          "color": "#00ddf2",
-          "id": 2,
-        },
       ]
     }
     dispatch={[Function]}
@@ -75,40 +67,6 @@ ShallowWrapper {
             }
           />
         </label>
-        <label
-          className="tag"
-        >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
-          />
-          <span
-            className="tag__span"
-            style={
-              Object {
-                "backgroundColor": "#0003f2",
-              }
-            }
-          />
-        </label>
-        <label
-          className="tag"
-        >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
-          />
-          <span
-            className="tag__span"
-            style={
-              Object {
-                "backgroundColor": "#00ddf2",
-              }
-            }
-          />
-        </label>
       </div>,
       "className": "tags",
     },
@@ -138,40 +96,6 @@ ShallowWrapper {
                 style={
                   Object {
                     "backgroundColor": "#3ae800",
-                  }
-                }
-              />
-            </label>,
-            <label
-              className="tag"
-            >
-              <input
-                checked={false}
-                onChange={[Function]}
-                type="checkbox"
-              />
-              <span
-                className="tag__span"
-                style={
-                  Object {
-                    "backgroundColor": "#0003f2",
-                  }
-                }
-              />
-            </label>,
-            <label
-              className="tag"
-            >
-              <input
-                checked={false}
-                onChange={[Function]}
-                type="checkbox"
-              />
-              <span
-                className="tag__span"
-                style={
-                  Object {
-                    "backgroundColor": "#00ddf2",
                   }
                 }
               />
@@ -248,114 +172,6 @@ ShallowWrapper {
           ],
           "type": "label",
         },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <input
-                checked={false}
-                onChange={[Function]}
-                type="checkbox"
-              />,
-              <span
-                className="tag__span"
-                style={
-                  Object {
-                    "backgroundColor": "#0003f2",
-                  }
-                }
-              />,
-            ],
-            "className": "tag",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "checked": false,
-                "onChange": [Function],
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "tag__span",
-                "style": Object {
-                  "backgroundColor": "#0003f2",
-                },
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "span",
-            },
-          ],
-          "type": "label",
-        },
-        Object {
-          "instance": null,
-          "key": "2",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <input
-                checked={false}
-                onChange={[Function]}
-                type="checkbox"
-              />,
-              <span
-                className="tag__span"
-                style={
-                  Object {
-                    "backgroundColor": "#00ddf2",
-                  }
-                }
-              />,
-            ],
-            "className": "tag",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "checked": false,
-                "onChange": [Function],
-                "type": "checkbox",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "tag__span",
-                "style": Object {
-                  "backgroundColor": "#00ddf2",
-                },
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "span",
-            },
-          ],
-          "type": "label",
-        },
       ],
       "type": "div",
     },
@@ -392,40 +208,6 @@ ShallowWrapper {
               }
             />
           </label>
-          <label
-            className="tag"
-          >
-            <input
-              checked={false}
-              onChange={[Function]}
-              type="checkbox"
-            />
-            <span
-              className="tag__span"
-              style={
-                Object {
-                  "backgroundColor": "#0003f2",
-                }
-              }
-            />
-          </label>
-          <label
-            className="tag"
-          >
-            <input
-              checked={false}
-              onChange={[Function]}
-              type="checkbox"
-            />
-            <span
-              className="tag__span"
-              style={
-                Object {
-                  "backgroundColor": "#00ddf2",
-                }
-              }
-            />
-          </label>
         </div>,
         "className": "tags",
       },
@@ -455,40 +237,6 @@ ShallowWrapper {
                   style={
                     Object {
                       "backgroundColor": "#3ae800",
-                    }
-                  }
-                />
-              </label>,
-              <label
-                className="tag"
-              >
-                <input
-                  checked={false}
-                  onChange={[Function]}
-                  type="checkbox"
-                />
-                <span
-                  className="tag__span"
-                  style={
-                    Object {
-                      "backgroundColor": "#0003f2",
-                    }
-                  }
-                />
-              </label>,
-              <label
-                className="tag"
-              >
-                <input
-                  checked={false}
-                  onChange={[Function]}
-                  type="checkbox"
-                />
-                <span
-                  className="tag__span"
-                  style={
-                    Object {
-                      "backgroundColor": "#00ddf2",
                     }
                   }
                 />
@@ -556,114 +304,6 @@ ShallowWrapper {
                   "className": "tag__span",
                   "style": Object {
                     "backgroundColor": "#3ae800",
-                  },
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "span",
-              },
-            ],
-            "type": "label",
-          },
-          Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <input
-                  checked={false}
-                  onChange={[Function]}
-                  type="checkbox"
-                />,
-                <span
-                  className="tag__span"
-                  style={
-                    Object {
-                      "backgroundColor": "#0003f2",
-                    }
-                  }
-                />,
-              ],
-              "className": "tag",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "checked": false,
-                  "onChange": [Function],
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "tag__span",
-                  "style": Object {
-                    "backgroundColor": "#0003f2",
-                  },
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "span",
-              },
-            ],
-            "type": "label",
-          },
-          Object {
-            "instance": null,
-            "key": "2",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <input
-                  checked={false}
-                  onChange={[Function]}
-                  type="checkbox"
-                />,
-                <span
-                  className="tag__span"
-                  style={
-                    Object {
-                      "backgroundColor": "#00ddf2",
-                    }
-                  }
-                />,
-              ],
-              "className": "tag",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "checked": false,
-                  "onChange": [Function],
-                  "type": "checkbox",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "input",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "tag__span",
-                  "style": Object {
-                    "backgroundColor": "#00ddf2",
                   },
                 },
                 "ref": null,

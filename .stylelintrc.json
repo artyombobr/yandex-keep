@@ -26,7 +26,6 @@
     "media-feature-name-no-vendor-prefix": true,
     "number-leading-zero": "never",
     "number-no-trailing-zeros": true,
-    "no-extra-semicolons": true,
-    "property-no-vendor-prefix": true
+    "no-extra-semicolons": true
   }
 }

@@ -97,7 +97,7 @@ const AddNote = (props: any) => {
           <input
             className="modal__date"
             type="datetime-local"
-            value={new Date().toISOString().substr(0, 16)}
+            // value={new Date().toISOString().substr(0, 16)}
             onChange={e => {
               setData({ ...dataNote, reminder: Date.parse(e.target.value) });
             }}

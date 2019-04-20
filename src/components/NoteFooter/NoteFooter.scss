@@ -1,0 +1,46 @@
+.note {
+  &__footer {
+    flex-grow: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__info {
+    display: flex;
+    padding: 0 24px;
+    justify-content: space-between;
+  }
+}
+
+.icons {
+  transition: opacity .4s;
+
+  &__item {
+    margin-right: 17px;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity .4s;
+    background: none;
+    border: none;
+    outline: none;
+
+    &:hover{
+      opacity: 1;
+    }
+
+    & g{
+      opacity: inherit;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .icons{
+    opacity: 0;
+  }
+
+  .note:hover .icons{
+    opacity: 1;
+  }
+}

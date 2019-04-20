@@ -8,14 +8,6 @@ describe('Filter', () => {
       id: 0,
       color: '#3ae800',
     },
-    {
-      id: 1,
-      color: '#0003f2',
-    },
-    {
-      id: 2,
-      color: '#00ddf2',
-    },
   ];
   const allNotes = [
     {
@@ -26,11 +18,10 @@ describe('Filter', () => {
       created: 1551593220000,
     },
   ];
-  const dispatch = () => {};
 
   it('correct render', () => {
     const component = shallow(
-      <Filter colors={colors} allNotes={allNotes} dispatch={dispatch} />
+      <Filter colors={colors} allNotes={allNotes} dispatch={() => {}} />
     );
     expect(component).toMatchSnapshot();
   });

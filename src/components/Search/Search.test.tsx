@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Logo from './Logo';
+import { Search } from './Search';
 
-describe('Logo', () => {
+describe('Search', () => {
   it('correct render', () => {
-    const component = shallow(<Logo className="header__logo" color="black" />);
+    const component = shallow(<Search />);
     expect(component).toMatchSnapshot();
   });
 });

@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notes correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Notes
+    colors={
+      Array [
+        Object {
+          "color": "#E84747",
+          "id": 0,
+        },
+      ]
+    }
+    notes={
+      Array [
+        Object {
+          "color": 0,
+          "created": 1551593220000,
+          "id": 1,
+          "items": Array [
+            Object {
+              "checked": false,
+              "text": "Оливочки",
+            },
+          ],
+          "size": "s",
+          "tags": Array [
+            0,
+          ],
+          "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+          "type": "text",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="notes__inner"
+      >
+        <Note
+          colors={
+            Array [
+              Object {
+                "color": "#E84747",
+                "id": 0,
+              },
+            ]
+          }
+          note={
+            Object {
+              "color": 0,
+              "created": 1551593220000,
+              "id": 1,
+              "items": Array [
+                Object {
+                  "checked": false,
+                  "text": "Оливочки",
+                },
+              ],
+              "size": "s",
+              "tags": Array [
+                0,
+              ],
+              "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+              "type": "text",
+            }
+          }
+        />
+      </div>,
+      "className": "notes",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Note
+            colors={
+              Array [
+                Object {
+                  "color": "#E84747",
+                  "id": 0,
+                },
+              ]
+            }
+            note={
+              Object {
+                "color": 0,
+                "created": 1551593220000,
+                "id": 1,
+                "items": Array [
+                  Object {
+                    "checked": false,
+                    "text": "Оливочки",
+                  },
+                ],
+                "size": "s",
+                "tags": Array [
+                  0,
+                ],
+                "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+                "type": "text",
+              }
+            }
+          />,
+        ],
+        "className": "notes__inner",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1551593220000",
+          "nodeType": "function",
+          "props": Object {
+            "colors": Array [
+              Object {
+                "color": "#E84747",
+                "id": 0,
+              },
+            ],
+            "note": Object {
+              "color": 0,
+              "created": 1551593220000,
+              "id": 1,
+              "items": Array [
+                Object {
+                  "checked": false,
+                  "text": "Оливочки",
+                },
+              ],
+              "size": "s",
+              "tags": Array [
+                0,
+              ],
+              "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+              "type": "text",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="notes__inner"
+        >
+          <Note
+            colors={
+              Array [
+                Object {
+                  "color": "#E84747",
+                  "id": 0,
+                },
+              ]
+            }
+            note={
+              Object {
+                "color": 0,
+                "created": 1551593220000,
+                "id": 1,
+                "items": Array [
+                  Object {
+                    "checked": false,
+                    "text": "Оливочки",
+                  },
+                ],
+                "size": "s",
+                "tags": Array [
+                  0,
+                ],
+                "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+                "type": "text",
+              }
+            }
+          />
+        </div>,
+        "className": "notes",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Note
+              colors={
+                Array [
+                  Object {
+                    "color": "#E84747",
+                    "id": 0,
+                  },
+                ]
+              }
+              note={
+                Object {
+                  "color": 0,
+                  "created": 1551593220000,
+                  "id": 1,
+                  "items": Array [
+                    Object {
+                      "checked": false,
+                      "text": "Оливочки",
+                    },
+                  ],
+                  "size": "s",
+                  "tags": Array [
+                    0,
+                  ],
+                  "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+                  "type": "text",
+                }
+              }
+            />,
+          ],
+          "className": "notes__inner",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1551593220000",
+            "nodeType": "function",
+            "props": Object {
+              "colors": Array [
+                Object {
+                  "color": "#E84747",
+                  "id": 0,
+                },
+              ],
+              "note": Object {
+                "color": 0,
+                "created": 1551593220000,
+                "id": 1,
+                "items": Array [
+                  Object {
+                    "checked": false,
+                    "text": "Оливочки",
+                  },
+                ],
+                "size": "s",
+                "tags": Array [
+                  0,
+                ],
+                "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+                "type": "text",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

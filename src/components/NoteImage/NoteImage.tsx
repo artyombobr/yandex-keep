@@ -1,6 +1,7 @@
 import * as React from 'react';
 import NoteFooter from '../NoteFooter/NoteFooter';
 import setBackground from '../../helpers/setBackground';
+import './NoteImage.scss';
 
 function NoteImage(props: any) {
   const { note, colors } = props;

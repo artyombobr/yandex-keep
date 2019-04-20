@@ -5,9 +5,17 @@ import getSessionStorage from '../../helpers/getSessionStorage';
 import { ColorsEntity, NotesEntity } from '../../shared';
 import './Filter.scss';
 
-function Filter(props: any) {
-  const { colors, allNotes, dispatch, visibleNotes } = props;
+interface FilterProps extends State {
+  dispatch: Function;
+}
 
+interface State {
+  colors: ColorsEntity[];
+  allNotes: NotesEntity[];
+}
+
+export const Filter = (props: FilterProps) => {
+  const { colors, allNotes, dispatch } = props;
   const [activeFilter, setActiveFilter] = useState<number[]>(
     getSessionStorage('filter')
   );
@@ -58,13 +66,12 @@ function Filter(props: any) {
       </div>
     </section>
   );
-}
+};
 
-const stateToProps = (state: any) => {
+const stateToProps = (state: State) => {
   return {
     colors: state.colors,
     allNotes: state.allNotes,
-    visibleNotes: state.visibleNotes,
   };
 };
 

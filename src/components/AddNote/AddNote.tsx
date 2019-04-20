@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './addNote.scss';
+import './AddNote.scss';
 import { connect } from 'react-redux';
 import { fetchAddNote, toggleModal } from '../../actions';
 import ColorPicker from './ColorPicker/ColorPicker';

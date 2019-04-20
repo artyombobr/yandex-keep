@@ -1,0 +1,707 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter correct render 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Filter
+    allNotes={
+      Array [
+        Object {
+          "created": 1551593220000,
+          "size": "s",
+          "tags": Array [
+            0,
+          ],
+          "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+          "type": "text",
+        },
+      ]
+    }
+    colors={
+      Array [
+        Object {
+          "color": "#3ae800",
+          "id": 0,
+        },
+        Object {
+          "color": "#0003f2",
+          "id": 1,
+        },
+        Object {
+          "color": "#00ddf2",
+          "id": 2,
+        },
+      ]
+    }
+    dispatch={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="tags__inner"
+      >
+        <h1
+          className="tags__title"
+        >
+          Заметки
+        </h1>
+        <label
+          className="tag"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="tag__span"
+            style={
+              Object {
+                "backgroundColor": "#3ae800",
+              }
+            }
+          />
+        </label>
+        <label
+          className="tag"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="tag__span"
+            style={
+              Object {
+                "backgroundColor": "#0003f2",
+              }
+            }
+          />
+        </label>
+        <label
+          className="tag"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          <span
+            className="tag__span"
+            style={
+              Object {
+                "backgroundColor": "#00ddf2",
+              }
+            }
+          />
+        </label>
+      </div>,
+      "className": "tags",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="tags__title"
+          >
+            Заметки
+          </h1>,
+          Array [
+            <label
+              className="tag"
+            >
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="tag__span"
+                style={
+                  Object {
+                    "backgroundColor": "#3ae800",
+                  }
+                }
+              />
+            </label>,
+            <label
+              className="tag"
+            >
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="tag__span"
+                style={
+                  Object {
+                    "backgroundColor": "#0003f2",
+                  }
+                }
+              />
+            </label>,
+            <label
+              className="tag"
+            >
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="tag__span"
+                style={
+                  Object {
+                    "backgroundColor": "#00ddf2",
+                  }
+                }
+              />
+            </label>,
+          ],
+        ],
+        "className": "tags__inner",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Заметки",
+            "className": "tags__title",
+          },
+          "ref": null,
+          "rendered": "Заметки",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <span
+                className="tag__span"
+                style={
+                  Object {
+                    "backgroundColor": "#3ae800",
+                  }
+                }
+              />,
+            ],
+            "className": "tag",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "tag__span",
+                "style": Object {
+                  "backgroundColor": "#3ae800",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <span
+                className="tag__span"
+                style={
+                  Object {
+                    "backgroundColor": "#0003f2",
+                  }
+                }
+              />,
+            ],
+            "className": "tag",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "tag__span",
+                "style": Object {
+                  "backgroundColor": "#0003f2",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <input
+                checked={false}
+                onChange={[Function]}
+                type="checkbox"
+              />,
+              <span
+                className="tag__span"
+                style={
+                  Object {
+                    "backgroundColor": "#00ddf2",
+                  }
+                }
+              />,
+            ],
+            "className": "tag",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "checked": false,
+                "onChange": [Function],
+                "type": "checkbox",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "tag__span",
+                "style": Object {
+                  "backgroundColor": "#00ddf2",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "label",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="tags__inner"
+        >
+          <h1
+            className="tags__title"
+          >
+            Заметки
+          </h1>
+          <label
+            className="tag"
+          >
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="tag__span"
+              style={
+                Object {
+                  "backgroundColor": "#3ae800",
+                }
+              }
+            />
+          </label>
+          <label
+            className="tag"
+          >
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="tag__span"
+              style={
+                Object {
+                  "backgroundColor": "#0003f2",
+                }
+              }
+            />
+          </label>
+          <label
+            className="tag"
+          >
+            <input
+              checked={false}
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="tag__span"
+              style={
+                Object {
+                  "backgroundColor": "#00ddf2",
+                }
+              }
+            />
+          </label>
+        </div>,
+        "className": "tags",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="tags__title"
+            >
+              Заметки
+            </h1>,
+            Array [
+              <label
+                className="tag"
+              >
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="tag__span"
+                  style={
+                    Object {
+                      "backgroundColor": "#3ae800",
+                    }
+                  }
+                />
+              </label>,
+              <label
+                className="tag"
+              >
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="tag__span"
+                  style={
+                    Object {
+                      "backgroundColor": "#0003f2",
+                    }
+                  }
+                />
+              </label>,
+              <label
+                className="tag"
+              >
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="tag__span"
+                  style={
+                    Object {
+                      "backgroundColor": "#00ddf2",
+                    }
+                  }
+                />
+              </label>,
+            ],
+          ],
+          "className": "tags__inner",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Заметки",
+              "className": "tags__title",
+            },
+            "ref": null,
+            "rendered": "Заметки",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="checkbox"
+                />,
+                <span
+                  className="tag__span"
+                  style={
+                    Object {
+                      "backgroundColor": "#3ae800",
+                    }
+                  }
+                />,
+              ],
+              "className": "tag",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "checked": false,
+                  "onChange": [Function],
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "tag__span",
+                  "style": Object {
+                    "backgroundColor": "#3ae800",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="checkbox"
+                />,
+                <span
+                  className="tag__span"
+                  style={
+                    Object {
+                      "backgroundColor": "#0003f2",
+                    }
+                  }
+                />,
+              ],
+              "className": "tag",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "checked": false,
+                  "onChange": [Function],
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "tag__span",
+                  "style": Object {
+                    "backgroundColor": "#0003f2",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+            ],
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="checkbox"
+                />,
+                <span
+                  className="tag__span"
+                  style={
+                    Object {
+                      "backgroundColor": "#00ddf2",
+                    }
+                  }
+                />,
+              ],
+              "className": "tag",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "checked": false,
+                  "onChange": [Function],
+                  "type": "checkbox",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "tag__span",
+                  "style": Object {
+                    "backgroundColor": "#00ddf2",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+            ],
+            "type": "label",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

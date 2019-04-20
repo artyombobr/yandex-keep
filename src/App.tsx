@@ -6,7 +6,7 @@ import Header from './components/Header/Header';
 import NotesContainers from './containers/NotesContainers';
 import ArchiveContainers from './containers/ArchiveContainers';
 import Footer from './components/Footer/Footer';
-import NoteModal from './components/addNote/addNote';
+import NoteModal from './components/AddNote/AddNote';
 
 const App = (props: any) => {
   const { isVisibleModal } = props;

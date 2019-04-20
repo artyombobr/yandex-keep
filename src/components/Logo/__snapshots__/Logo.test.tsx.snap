@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Logo
+    className="header__logo"
+    color="black"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <a
+          className="logo__item"
+          href="https://yandex.ru"
+        >
+          <img
+            alt="Яндекс"
+            src="https://yastatic.net/q/logoaas/v1/Яндекс.svg?color=black"
+            style={
+              Object {
+                "width": 72,
+              }
+            }
+          />
+        </a>,
+        <a
+          className="logo__item"
+          href="/"
+        >
+          <img
+            alt="Композитор"
+            src="https://yastatic.net/q/logoaas/v1/Домашка.svg?color=black"
+            style={
+              Object {
+                "width": 94,
+              }
+            }
+          />
+        </a>,
+      ],
+      "className": "header__logo logo",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Яндекс"
+            src="https://yastatic.net/q/logoaas/v1/Яндекс.svg?color=black"
+            style={
+              Object {
+                "width": 72,
+              }
+            }
+          />,
+          "className": "logo__item",
+          "href": "https://yandex.ru",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Яндекс",
+            "src": "https://yastatic.net/q/logoaas/v1/Яндекс.svg?color=black",
+            "style": Object {
+              "width": 72,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "a",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Композитор"
+            src="https://yastatic.net/q/logoaas/v1/Домашка.svg?color=black"
+            style={
+              Object {
+                "width": 94,
+              }
+            }
+          />,
+          "className": "logo__item",
+          "href": "/",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Композитор",
+            "src": "https://yastatic.net/q/logoaas/v1/Домашка.svg?color=black",
+            "style": Object {
+              "width": 94,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <a
+            className="logo__item"
+            href="https://yandex.ru"
+          >
+            <img
+              alt="Яндекс"
+              src="https://yastatic.net/q/logoaas/v1/Яндекс.svg?color=black"
+              style={
+                Object {
+                  "width": 72,
+                }
+              }
+            />
+          </a>,
+          <a
+            className="logo__item"
+            href="/"
+          >
+            <img
+              alt="Композитор"
+              src="https://yastatic.net/q/logoaas/v1/Домашка.svg?color=black"
+              style={
+                Object {
+                  "width": 94,
+                }
+              }
+            />
+          </a>,
+        ],
+        "className": "header__logo logo",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Яндекс"
+              src="https://yastatic.net/q/logoaas/v1/Яндекс.svg?color=black"
+              style={
+                Object {
+                  "width": 72,
+                }
+              }
+            />,
+            "className": "logo__item",
+            "href": "https://yandex.ru",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Яндекс",
+              "src": "https://yastatic.net/q/logoaas/v1/Яндекс.svg?color=black",
+              "style": Object {
+                "width": 72,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "a",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Композитор"
+              src="https://yastatic.net/q/logoaas/v1/Домашка.svg?color=black"
+              style={
+                Object {
+                  "width": 94,
+                }
+              }
+            />,
+            "className": "logo__item",
+            "href": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Композитор",
+              "src": "https://yastatic.net/q/logoaas/v1/Домашка.svg?color=black",
+              "style": Object {
+                "width": 94,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

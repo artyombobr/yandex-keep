@@ -16,7 +16,6 @@ const Search = (props: any) => {
   useEffect(() => {
     const fuse = new Fuse(allNotes, options);
     const result = fuse.search(text);
-    console.log(result);
     if (result.length || text.length) {
       dispatch(setVisibleNotes(result));
     } else {
@@ -41,7 +40,6 @@ const Search = (props: any) => {
 };
 
 const stateToProps = (state: any) => {
-  console.log(state);
   return {
     allNotes: state.allNotes,
   };

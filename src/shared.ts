@@ -1,4 +1,4 @@
-export interface NotesProps {
+export default interface NotesProps {
   data: DataEntity;
   notes: NotesEntity[];
 }

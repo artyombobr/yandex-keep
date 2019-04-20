@@ -20,7 +20,7 @@ describe('NoteImage', () => {
     },
   ];
 
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(<NoteImage note={note} colors={colors} />);
     expect(component).toMatchSnapshot();
   });

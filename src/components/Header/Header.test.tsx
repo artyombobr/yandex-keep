@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { Header } from './Header';
 
 describe('Header', () => {
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(
       <Header isVisibleModal={false} dispatch={() => {}} />
     );

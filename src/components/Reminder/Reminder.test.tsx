@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Reminder from './Reminder';
 
 describe('Reminder', () => {
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(<Reminder />);
     expect(component).toMatchSnapshot();
   });

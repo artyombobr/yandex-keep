@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Note correct render 1`] = `
+exports[`Note renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Note
@@ -14,7 +14,7 @@ ShallowWrapper {
     }
     note={
       Object {
-        "color": 3,
+        "color": 0,
         "created": 1520160803000,
         "size": "s",
         "title": "Не забыть выгулять Сиба-Ину",
@@ -53,7 +53,7 @@ ShallowWrapper {
             }
             note={
               Object {
-                "color": 3,
+                "color": 0,
                 "created": 1520160803000,
                 "size": "s",
                 "title": "Не забыть выгулять Сиба-Ину",
@@ -87,7 +87,7 @@ ShallowWrapper {
               }
               note={
                 Object {
-                  "color": 3,
+                  "color": 0,
                   "created": 1520160803000,
                   "size": "s",
                   "title": "Не забыть выгулять Сиба-Ину",
@@ -119,7 +119,7 @@ ShallowWrapper {
                 }
                 note={
                   Object {
-                    "color": 3,
+                    "color": 0,
                     "created": 1520160803000,
                     "size": "s",
                     "title": "Не забыть выгулять Сиба-Ину",
@@ -145,7 +145,7 @@ ShallowWrapper {
                   },
                 ],
                 "note": Object {
-                  "color": 3,
+                  "color": 0,
                   "created": 1520160803000,
                   "size": "s",
                   "title": "Не забыть выгулять Сиба-Ину",
@@ -188,7 +188,7 @@ ShallowWrapper {
               }
               note={
                 Object {
-                  "color": 3,
+                  "color": 0,
                   "created": 1520160803000,
                   "size": "s",
                   "title": "Не забыть выгулять Сиба-Ину",
@@ -222,7 +222,7 @@ ShallowWrapper {
                 }
                 note={
                   Object {
-                    "color": 3,
+                    "color": 0,
                     "created": 1520160803000,
                     "size": "s",
                     "title": "Не забыть выгулять Сиба-Ину",
@@ -254,7 +254,7 @@ ShallowWrapper {
                   }
                   note={
                     Object {
-                      "color": 3,
+                      "color": 0,
                       "created": 1520160803000,
                       "size": "s",
                       "title": "Не забыть выгулять Сиба-Ину",
@@ -280,7 +280,7 @@ ShallowWrapper {
                     },
                   ],
                   "note": Object {
-                    "color": 3,
+                    "color": 0,
                     "created": 1520160803000,
                     "size": "s",
                     "title": "Не забыть выгулять Сиба-Ину",

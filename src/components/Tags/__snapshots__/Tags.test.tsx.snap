@@ -1,15 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List renders correctly 1`] = `
+exports[`Tags renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <List
-    dispatch={[Function]}
-    items={
+  Symbol(enzyme.__unrendered__): <Tags
+    note={
+      Object {
+        "color": 0,
+        "created": 1551593220000,
+        "id": 1,
+        "size": "s",
+        "tags": Array [
+          0,
+        ],
+        "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+        "type": "text",
+      }
+    }
+    tags={
       Array [
         Object {
-          "checked": false,
-          "text": "Оливочки",
+          "id": 0,
+          "tag": "покупки",
         },
       ]
     }
@@ -25,47 +38,31 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": "0",
+    "key": undefined,
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <input
-          defaultChecked={false}
-          type="checkbox"
-        />,
-        <span
-          className="checkbox__span"
+        <div
+          className="note__tag"
         >
-          Оливочки
-        </span>,
+          покупки
+        </div>,
       ],
-      "className": "checkbox",
+      "className": "note__tags",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0",
         "nodeType": "host",
         "props": Object {
-          "defaultChecked": false,
-          "type": "checkbox",
+          "children": "покупки",
+          "className": "note__tag",
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Оливочки",
-          "className": "checkbox__span",
-        },
-        "ref": null,
-        "rendered": "Оливочки",
-        "type": "span",
+        "rendered": "покупки",
+        "type": "div",
       },
     ],
     "type": "div",
@@ -73,47 +70,31 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": "0",
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <input
-            defaultChecked={false}
-            type="checkbox"
-          />,
-          <span
-            className="checkbox__span"
+          <div
+            className="note__tag"
           >
-            Оливочки
-          </span>,
+            покупки
+          </div>,
         ],
-        "className": "checkbox",
+        "className": "note__tags",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0",
           "nodeType": "host",
           "props": Object {
-            "defaultChecked": false,
-            "type": "checkbox",
+            "children": "покупки",
+            "className": "note__tag",
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Оливочки",
-            "className": "checkbox__span",
-          },
-          "ref": null,
-          "rendered": "Оливочки",
-          "type": "span",
+          "rendered": "покупки",
+          "type": "div",
         },
       ],
       "type": "div",

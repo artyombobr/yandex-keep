@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Footer from './Footer';
 
 describe('Footer', () => {
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(<Footer />);
     expect(component).toMatchSnapshot();
   });

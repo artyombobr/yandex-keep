@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import { Search } from './Search';
 
 describe('Search', () => {
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(<Search />);
     expect(component).toMatchSnapshot();
   });

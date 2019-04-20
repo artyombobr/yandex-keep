@@ -17,7 +17,7 @@ describe('Note', () => {
     size: 's',
     created: 1520160803000,
   };
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(<Note colors={colors} note={note} />);
     expect(component).toMatchSnapshot();
   });

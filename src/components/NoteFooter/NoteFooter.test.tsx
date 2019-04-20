@@ -18,7 +18,7 @@ describe('NoteFooter', () => {
     },
   ];
 
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(
       <NoteFooter note={note} tags={tags} dispatch={() => {}} />
     );

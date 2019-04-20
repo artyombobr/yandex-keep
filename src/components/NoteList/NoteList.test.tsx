@@ -26,7 +26,7 @@ describe('NoteList', () => {
     },
   ];
 
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(<NoteList note={note} colors={colors} />);
     expect(component).toMatchSnapshot();
   });

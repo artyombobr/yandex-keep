@@ -19,7 +19,7 @@ describe('Filter', () => {
     },
   ];
 
-  it('correct render', () => {
+  it('renders correctly', () => {
     const component = shallow(
       <Filter colors={colors} allNotes={allNotes} dispatch={() => {}} />
     );

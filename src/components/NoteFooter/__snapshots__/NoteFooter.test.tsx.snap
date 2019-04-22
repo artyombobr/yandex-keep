@@ -1,0 +1,456 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteFooter renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NoteFooter
+    dispatch={[Function]}
+    note={
+      Object {
+        "created": 1551593220000,
+        "id": 1,
+        "size": "s",
+        "tags": Array [
+          0,
+        ],
+        "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+        "type": "text",
+      }
+    }
+    tags={
+      Array [
+        Object {
+          "id": 0,
+          "tag": "покупки",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Tags
+          note={
+            Object {
+              "created": 1551593220000,
+              "id": 1,
+              "size": "s",
+              "tags": Array [
+                0,
+              ],
+              "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+              "type": "text",
+            }
+          }
+          tags={
+            Array [
+              Object {
+                "id": 0,
+                "tag": "покупки",
+              },
+            ]
+          }
+        />,
+        <div
+          className="note__info"
+        >
+          <div
+            className="icons"
+          >
+            <button
+              className="icons__item"
+              onClick={[Function]}
+              type="button"
+            >
+              <ForwardRef />
+            </button>
+            <button
+              className="icons__item"
+              type="button"
+            >
+              <ForwardRef />
+            </button>
+          </div>
+          2 месяца назад
+        </div>,
+      ],
+      "className": "note__footer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "note": Object {
+            "created": 1551593220000,
+            "id": 1,
+            "size": "s",
+            "tags": Array [
+              0,
+            ],
+            "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+            "type": "text",
+          },
+          "tags": Array [
+            Object {
+              "id": 0,
+              "tag": "покупки",
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="icons"
+            >
+              <button
+                className="icons__item"
+                onClick={[Function]}
+                type="button"
+              >
+                <ForwardRef />
+              </button>
+              <button
+                className="icons__item"
+                type="button"
+              >
+                <ForwardRef />
+              </button>
+            </div>,
+            "2 месяца назад",
+          ],
+          "className": "note__info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  className="icons__item"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <ForwardRef />
+                </button>,
+                <button
+                  className="icons__item"
+                  type="button"
+                >
+                  <ForwardRef />
+                </button>,
+              ],
+              "className": "icons",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ForwardRef />,
+                  "className": "icons__item",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                },
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ForwardRef />,
+                  "className": "icons__item",
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                },
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          "2 месяца назад",
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Tags
+            note={
+              Object {
+                "created": 1551593220000,
+                "id": 1,
+                "size": "s",
+                "tags": Array [
+                  0,
+                ],
+                "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+                "type": "text",
+              }
+            }
+            tags={
+              Array [
+                Object {
+                  "id": 0,
+                  "tag": "покупки",
+                },
+              ]
+            }
+          />,
+          <div
+            className="note__info"
+          >
+            <div
+              className="icons"
+            >
+              <button
+                className="icons__item"
+                onClick={[Function]}
+                type="button"
+              >
+                <ForwardRef />
+              </button>
+              <button
+                className="icons__item"
+                type="button"
+              >
+                <ForwardRef />
+              </button>
+            </div>
+            2 месяца назад
+          </div>,
+        ],
+        "className": "note__footer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "note": Object {
+              "created": 1551593220000,
+              "id": 1,
+              "size": "s",
+              "tags": Array [
+                0,
+              ],
+              "text": "Купить чайник с Bluetooth
+Видел у Xiaomi на днях",
+              "type": "text",
+            },
+            "tags": Array [
+              Object {
+                "id": 0,
+                "tag": "покупки",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="icons"
+              >
+                <button
+                  className="icons__item"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <ForwardRef />
+                </button>
+                <button
+                  className="icons__item"
+                  type="button"
+                >
+                  <ForwardRef />
+                </button>
+              </div>,
+              "2 месяца назад",
+            ],
+            "className": "note__info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="icons__item"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    <ForwardRef />
+                  </button>,
+                  <button
+                    className="icons__item"
+                    type="button"
+                  >
+                    <ForwardRef />
+                  </button>,
+                ],
+                "className": "icons",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <ForwardRef />,
+                    "className": "icons__item",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <ForwardRef />,
+                    "className": "icons__item",
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {},
+                    "ref": null,
+                    "rendered": null,
+                    "type": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                  },
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            "2 месяца назад",
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

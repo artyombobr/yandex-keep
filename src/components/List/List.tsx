@@ -1,10 +1,11 @@
-import * as React from 'react';
+import React from 'react';
+import './List.scss';
 
 function List(props: any) {
-  const { items, checked } = props;
+  const { items } = props;
   return items.map((item: any, index: number) => (
     <div className="checkbox" key={index.toString()}>
-      <input defaultChecked={checked} type="checkbox" />
+      <input defaultChecked={item.checked} type="checkbox" />
       <span className="checkbox__span">{item.text}</span>
     </div>
   ));

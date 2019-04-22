@@ -1,0 +1,50 @@
+.site {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+
+  &:last-child {
+    border: none;
+  }
+
+  &__link {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .4s;
+
+    &:hover {
+      color: #db5341;
+    }
+  }
+}
+
+.image {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  margin: 12px 12px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 12px;
+
+  &__icon {
+    margin-left: 12px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}

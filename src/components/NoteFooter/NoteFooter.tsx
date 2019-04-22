@@ -4,12 +4,18 @@ import 'moment/locale/ru';
 import { connect } from 'react-redux';
 import Tags from '../Tags/Tags';
 import { fetchNoteToArchive, fetchEditNote } from '../../actions';
+import { TagsEntity } from '../../../server/src/shared';
+import './NoteFooter.scss';
 
 import { ReactComponent as Check } from '../Note/svg/check.svg';
 import { ReactComponent as Edit } from '../Note/svg/edit.svg';
 
-function NoteFooter(props: any) {
-  const { note, tags, dispatch, setEdit, isEdit, data } = props;
+interface IState {
+  tags: TagsEntity[];
+}
+
+export const NoteFooter = (props: any) => {
+  const { note, tags, dispatch, setEdit, isEdit, data  } = props;
   return (
     <div className="note__footer">
       {tags && <Tags note={note} tags={tags} />}
@@ -49,9 +55,9 @@ function NoteFooter(props: any) {
       </div>
     </div>
   );
-}
+};
 
-const mapStateToProps = (state: any) => {
+const mapStateToProps = (state: IState) => {
   return {
     tags: state.tags,
   };

@@ -6,7 +6,7 @@ import Search from '../Search/Search';
 import './Header.scss';
 import { toggleModal } from '../../actions';
 
-const Header = (props: any) => {
+export const Header = (props: any) => {
   const { isVisibleModal, dispatch } = props;
   const [isOpenMenu, setOpenMenu] = useState(false);
   return (

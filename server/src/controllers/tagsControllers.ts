@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 import Tags from '../helpers/Tags';
-import data from './../shri.json';
+import data from '../shri.json';
 
 const tags = Tags.factory(data.tags);
 

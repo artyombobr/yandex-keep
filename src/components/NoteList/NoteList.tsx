@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import setBackground from '../../helpers/setBackground';
 import NoteFooter from '../NoteFooter/NoteFooter';
 import List from '../List/List';
+import './NoteList.scss';
 
 function NoteList(props: any) {
   const { colors, note, isEdit, setEdit, data, setData } = props;
@@ -33,12 +34,12 @@ function NoteList(props: any) {
         {note.text && <div className="note__text">{note.text}</div>}
         <div className="checklist">
           <div className="note__list">
-            <List items={notChecked} checked={false} />
+            <List items={notChecked} />
           </div>
         </div>
       </div>
       <div className="checklist">
-        <List items={checked} checked />
+        <List items={checked} />
       </div>
       <NoteFooter note={note} data={data} isEdit={isEdit} setEdit={setEdit} />
     </div>

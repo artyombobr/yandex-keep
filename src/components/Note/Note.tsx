@@ -6,7 +6,7 @@ import NoteText from '../NoteText/NoteText';
 import NoteList from '../NoteList/NoteList';
 import NoteImage from '../NoteImage/NoteImage';
 
-function Note(props: any) {
+export const Note = (props: any) => {
   const { note, colors } = props;
   const { type, attachments, reminder, size } = note;
   const [isEdit, setEdit] = useState(false);
@@ -43,7 +43,7 @@ function Note(props: any) {
   return (
     <div className={'note ' + size}>
       <div className="note__reminder">
-        {reminder > 0 && <Reminder isEdit={isEdit} reminder={reminder} />}
+        {reminder && reminder > 0 && <Reminder isEdit={isEdit} reminder={reminder} />}
         <div className="note__attachment">
           {NoteType[type]}
           {attachments && <Attachments attachments={attachments} />}
@@ -51,6 +51,6 @@ function Note(props: any) {
       </div>
     </div>
   );
-}
+};
 
 export default Note;

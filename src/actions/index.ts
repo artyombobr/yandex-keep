@@ -79,7 +79,7 @@ export const fetchAddNote = (note: any) => {
 export const fetchEditNote = (id: any, note: any) => {
   return (dispatch: any) => {
     return axios
-      .patch('/api/cards' + id, note)
+      .patch('/api/cards/' + id, note)
       .then(response => {
         dispatch(fetchAllNotes());
       })

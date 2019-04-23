@@ -15,7 +15,7 @@ interface IState {
 }
 
 export const NoteFooter = (props: any) => {
-  const { note, tags, dispatch, setEdit, isEdit, data  } = props;
+  const { note, tags, dispatch, setEdit, isEdit, data } = props;
   return (
     <div className="note__footer">
       {tags && <Tags note={note} tags={tags} />}
@@ -23,13 +23,22 @@ export const NoteFooter = (props: any) => {
         {!note.archive && (
           <div className="icons">
             {!isEdit ? (
-              <button
-                className="icons__item"
-                type="button"
-                onClick={() => dispatch(fetchNoteToArchive(note.id))}
-              >
-                <Check />
-              </button>
+              <>
+                <button
+                  className="icons__item"
+                  type="button"
+                  onClick={() => dispatch(fetchNoteToArchive(note.id))}
+                >
+                  <Check />
+                </button>
+                <button
+                  className="icons__item"
+                  type="button"
+                  onClick={() => setEdit(!isEdit)}
+                >
+                  <Edit />
+                </button>
+              </>
             ) : (
               <button
                 className="modal__button"
@@ -42,13 +51,6 @@ export const NoteFooter = (props: any) => {
                 {'Сохранить'}
               </button>
             )}
-            <button
-              className="icons__item"
-              type="button"
-              onClick={() => setEdit(!isEdit)}
-            >
-              <Edit />
-            </button>
           </div>
         )}
         {moment(note.created).fromNow()}

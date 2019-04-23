@@ -43,9 +43,9 @@ export const Filter = (props: FilterProps) => {
   }, [activeFilter, allNotes]);
 
   return (
-    <section className="tags">
-      <div className="tags__inner">
-        <h1 className="tags__title">Заметки</h1>
+    <section className="filters">
+      <div className="filters__inner">
+        <h1 className="filters__title">Заметки</h1>
         {colors &&
           colors.map((color: ColorsEntity) => {
             const styles = {
@@ -53,13 +53,13 @@ export const Filter = (props: FilterProps) => {
             };
             const checked = activeFilter.indexOf(color.id) !== -1;
             return (
-              <label key={color.id} className="tag">
+              <label key={color.id} className="filter">
                 <input
                   type="checkbox"
                   checked={checked}
                   onChange={() => handleColorClick(color.id)}
                 />
-                <span className="tag__span" style={styles} />
+                <span className="filter__span" style={styles} />
               </label>
             );
           })}

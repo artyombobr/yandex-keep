@@ -1,4 +1,5 @@
 import React from 'react';
+import './ColorPicker.scss';
 
 const ColorPicker = (props: any) => {
   const { colors, setData, dataNote } = props;
@@ -8,6 +9,7 @@ const ColorPicker = (props: any) => {
         return (
           <button
             key={color.id}
+            className="color-picker__item"
             onClick={() =>
               setData({
                 ...dataNote,
@@ -16,9 +18,7 @@ const ColorPicker = (props: any) => {
             }
             style={{ backgroundColor: color.color }}
             type="button"
-          >
-            {color.color}
-          </button>
+          />
         );
       })}
     </div>

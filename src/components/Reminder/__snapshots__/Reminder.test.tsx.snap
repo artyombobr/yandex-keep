@@ -3,7 +3,10 @@
 exports[`Reminder renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Reminder />,
+  Symbol(enzyme.__unrendered__): <Reminder
+    isEdit={false}
+    reminder={16546546716}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -23,7 +26,7 @@ ShallowWrapper {
         <div
           className="reminder__text"
         >
-          несколько секунд назад
+          49 лет назад
         </div>,
       ],
       "className": "reminder",
@@ -47,11 +50,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "несколько секунд назад",
+          "children": "49 лет назад",
           "className": "reminder__text",
         },
         "ref": null,
-        "rendered": "несколько секунд назад",
+        "rendered": "49 лет назад",
         "type": "div",
       },
     ],
@@ -68,7 +71,7 @@ ShallowWrapper {
           <div
             className="reminder__text"
           >
-            несколько секунд назад
+            49 лет назад
           </div>,
         ],
         "className": "reminder",
@@ -92,11 +95,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "несколько секунд назад",
+            "children": "49 лет назад",
             "className": "reminder__text",
           },
           "ref": null,
-          "rendered": "несколько секунд назад",
+          "rendered": "49 лет назад",
           "type": "div",
         },
       ],

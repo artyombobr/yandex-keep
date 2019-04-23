@@ -1,18 +1,23 @@
 import React from 'react';
+import './TagsPicker.scss';
 
 const TagsPicker = (props: any) => {
-  const { tags, handleTagClick } = props;
+  const { tags, dataNote, handleTagClick } = props;
   return (
-    <div>
+    <div className="tags-picker">
       {tags.map((tag: any) => {
+        const checked = dataNote.tags.indexOf(tag.id) !== -1;
+        console.log(checked);
         return (
-          <button
+          <div
             key={tag.id}
+            className={
+              'tags-picker__tag' + (checked ? ' tags-picker__tag_active' : '')
+            }
             onClick={() => handleTagClick(tag.id)}
-            type="button"
           >
             {tag.tag}
-          </button>
+          </div>
         );
       })}
     </div>

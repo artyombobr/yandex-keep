@@ -32,18 +32,20 @@ export const Note = (props: any) => {
         colors={colors}
       />
     ),
-    image: <NoteImage
-      isEdit={isEdit}
-      setEdit={setEdit}
-      note={note}
-      colors={colors}
-    />,
+    image: (
+      <NoteImage
+        isEdit={isEdit}
+        setEdit={setEdit}
+        note={note}
+        colors={colors}
+      />
+    ),
   };
 
   return (
     <div className={'note ' + size}>
       <div className="note__reminder">
-        {reminder && reminder > 0 && <Reminder isEdit={isEdit} reminder={reminder} />}
+        {reminder > 0 && <Reminder isEdit={isEdit} reminder={reminder} />}
         <div className="note__attachment">
           {NoteType[type]}
           {attachments && <Attachments attachments={attachments} />}

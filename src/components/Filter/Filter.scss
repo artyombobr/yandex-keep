@@ -1,6 +1,6 @@
 @import "../../shared.scss";
 
-.tags {
+.filters {
   overflow: hidden;
   height: 64px;
 
@@ -26,11 +26,11 @@
   }
 }
 
-.tag {
+.filter {
   margin-left: 16px;
 }
 
-.tag__span {
+.filter__span {
   display: block;
   position: relative;
   height: 48px;
@@ -58,24 +58,24 @@
   }
 }
 
-input:checked ~ .tag__span {
+input:checked ~ .filter__span {
   box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
   opacity: 1;
 }
 
-input:checked ~ .tag__span::after {
+input:checked ~ .filter__span::after {
   display: block;
 }
 
 @media (min-width: 1200px) {
-  .tags {
+  .filters {
     &__title {
       display: block;
       margin-left: 173px;
     }
   }
 
-  .tag__span {
+  .filter__span {
     height: 32px;
     width: 32px;
 

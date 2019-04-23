@@ -13,7 +13,6 @@
   }
 
   &__title {
-    background-color: transparent;
     border: none;
     outline: none;
     margin-bottom: 24px;
@@ -26,12 +25,14 @@
   }
 
   &__button {
+    height: 28px;
     background-color: #FC0;
     border: none;
     outline: none;
     padding: 5px;
     border-radius: 4px;
     margin: 0 5px;
+    cursor: pointer;
   }
 
   &__type {
@@ -44,11 +45,15 @@
       outline: none;
       margin-bottom: 24px;
       resize: none;
-      background-color: transparent;
     }
 
     &_image {
       margin-left: 10px;
     }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: flex-end;
   }
 }

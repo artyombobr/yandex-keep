@@ -86,35 +86,6 @@
     @include fontsize(16px, 20px, 18px, 22px, $small, $large);
   }
 
-  &__tags {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0 24px;
-  }
-
-  &__tag {
-    height: 24px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    display: inline-block;
-    line-height: 22px;
-    font-size: 14px;
-    margin-right: 12px;
-    margin-bottom: 12px;
-    padding: 0 12px;
-    border-radius: 16px;
-    background: rgba(51, 51, 51, .1);
-    cursor: pointer;
-    transition: background .4s;
-
-    &:hover {
-      background: rgba(51, 51, 51, .2);
-    }
-  }
-
   &_active {
     position: fixed;
     top: 0;

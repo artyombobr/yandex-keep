@@ -33,6 +33,14 @@
     border-radius: 4px;
     margin: 0 5px;
     cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__type {

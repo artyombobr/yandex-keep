@@ -97,34 +97,36 @@ const AddNote = (props: any) => {
         </div>
         {dataNote.type && (
           <div className="modal__toolbar">
-            <button
-              className="modal__button"
-              type="button"
-              onClick={() => setActiveTool('reminder')}
-            >
-              {'Напоминание'}
-            </button>
-            <button
-              className="modal__button"
-              type="button"
-              onClick={() => setActiveTool('colors')}
-            >
-              {'Цвета'}
-            </button>
-            <button
-              className="modal__button"
-              type="button"
-              onClick={() => setActiveTool('tags')}
-            >
-              {'Метки'}
-            </button>
-            <button
-              className="modal__button"
-              type="button"
-              onClick={() => setActiveTool('attachments')}
-            >
-              {'Приложения'}
-            </button>
+            <div className="toolbar__buttons">
+              <button
+                className="modal__button"
+                type="button"
+                onClick={() => setActiveTool('reminder')}
+              >
+                {'Напоминание'}
+              </button>
+              <button
+                className="modal__button"
+                type="button"
+                onClick={() => setActiveTool('colors')}
+              >
+                {'Цвета'}
+              </button>
+              <button
+                className="modal__button"
+                type="button"
+                onClick={() => setActiveTool('tags')}
+              >
+                {'Метки'}
+              </button>
+              <button
+                className="modal__button"
+                type="button"
+                onClick={() => setActiveTool('attachments')}
+              >
+                {'Приложения'}
+              </button>
+            </div>
             {activeTool == 'colors' && (
               <ColorPicker
                 colors={colors}
@@ -178,6 +180,7 @@ const AddNote = (props: any) => {
                     tags: dataNote.tags,
                     items: dataNote.items,
                     color: dataNote.color.id,
+                    attachments: dataNote.attachments,
                     reminder: dataNote.reminder,
                   })
                 );

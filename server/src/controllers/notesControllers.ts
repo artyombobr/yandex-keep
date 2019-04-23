@@ -47,15 +47,15 @@ export const addNote = (req: Request, res: Response) => {
     res.status(400).json({ error: 'Empty request body' });
   }
 };
-// todo
+
 export const editNote = (req: Request, res: Response) => {
   const { id } = req.params;
   const note = req.body;
   const result = notes.editNote(Number(id), note);
   if (result) {
-    res.status(200).json('success');
+    res.status(200).json(note);
   } else {
-    res.status(400).json({ status: 'fail' });
+    res.status(400).json({ error: 'No note with this id' });
   }
 };
 
@@ -68,7 +68,7 @@ export const deleteNote = (req: Request, res: Response) => {
     res.status(400).json({ error: 'No note with this id' });
   }
 };
-// todo
+
 export const getNoteById = (req: Request, res: Response) => {
   const { id } = req.query;
   res.status(200).json({ id });

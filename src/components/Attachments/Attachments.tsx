@@ -6,7 +6,7 @@ import { ReactComponent as Site } from '../Note/svg/site.svg';
 import { ReactComponent as Picture } from '../Note/svg/picture.svg';
 
 const Attachments = (props: any) => {
-  const { attachments } = props;
+  const { attachments, isEdit } = props;
   const list = [];
   const listSites = [];
   const listImages = [];

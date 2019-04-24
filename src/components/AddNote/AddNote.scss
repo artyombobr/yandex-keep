@@ -30,9 +30,9 @@
     background-color: #FC0;
     border: none;
     outline: none;
-    padding: 5px;
+    padding: 4px;
     border-radius: 4px;
-    margin: 0 5px;
+    margin: 0 4px;
     cursor: pointer;
 
     &:first-child {
@@ -64,5 +64,6 @@
   &__action {
     display: flex;
     justify-content: flex-end;
+    margin-top: 8px;
   }
 }

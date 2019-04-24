@@ -48,7 +48,9 @@ export const Note = (props: any) => {
         {reminder > 0 && <Reminder isEdit={isEdit} reminder={reminder} />}
         <div className="note__attachment">
           {NoteType[type]}
-          {attachments && <Attachments attachments={attachments} />}
+          {attachments && (
+            <Attachments isEdit={isEdit} attachments={attachments} />
+          )}
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ const Attachments = (props: any) => {
       {dataNote.attachments.map((attachment: any, index: number) => (
         <input
           className="attachments__input"
+          placeholder="Введите ссылку"
           key={index.toString()}
           type="text"
           onChange={e => {

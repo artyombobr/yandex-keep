@@ -78,6 +78,7 @@ input:checked ~ .filter__span::after {
   .filter__span {
     height: 32px;
     width: 32px;
+    cursor: pointer;
 
     &::after {
       top: 10px;

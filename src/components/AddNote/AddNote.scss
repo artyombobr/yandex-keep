@@ -56,8 +56,13 @@
       resize: none;
     }
 
+    &_list {
+      cursor: pointer;
+    }
+
     &_image {
       margin-left: 10px;
+      cursor: pointer;
     }
   }
 

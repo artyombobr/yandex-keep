@@ -21,7 +21,6 @@ const AddNote = (props: any) => {
     attachments: [],
     reminder: 0,
   });
-  console.log(dataNote);
   const handleTagClick = (id: number) => {
     if (dataNote.tags.indexOf(id) === -1) {
       const newTags = dataNote.tags;
@@ -127,24 +126,24 @@ const AddNote = (props: any) => {
                 {'Приложения'}
               </button>
             </div>
-            {activeTool == 'colors' && (
+            {activeTool === 'colors' && (
               <ColorPicker
                 colors={colors}
                 dataNote={dataNote}
                 setData={setData}
               />
             )}
-            {activeTool == 'tags' && (
+            {activeTool === 'tags' && (
               <TagsPicker
                 dataNote={dataNote}
                 handleTagClick={handleTagClick}
                 tags={tags}
               />
             )}
-            {activeTool == 'attachments' && (
+            {activeTool === 'attachments' && (
               <Attachments dataNote={dataNote} setData={setData} />
             )}
-            {activeTool == 'reminder' && (
+            {activeTool === 'reminder' && (
               <input
                 className="modal__date"
                 type="datetime-local"

@@ -1,1 +1,1 @@
-{"version":3,"file":"tagsRouter.js","sourceRoot":"","sources":["../../src/routes/tagsRouter.ts"],"names":[],"mappings":";;;;;AAAA,sDAA8B;AAE9B,oEAAyD;AAEzD,MAAM,MAAM,GAAW,iBAAO,CAAC,MAAM,EAAE,CAAC;AAExC,MAAM,CAAC,KAAK,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,yBAAO,CAAC,CAAC;AAE/B,kBAAe,MAAM,CAAC"}
+{"version":3,"file":"tagsRouter.js","sourceRoot":"","sources":["../../src/routes/tagsRouter.ts"],"names":[],"mappings":";;;;;AAAA,sDAA0C;AAC1C,oEAAyD;AAEzD,MAAM,MAAM,GAAW,iBAAO,CAAC,MAAM,EAAE,CAAC;AAExC,MAAM,CAAC,KAAK,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,yBAAO,CAAC,CAAC;AAE/B,kBAAe,MAAM,CAAC"}

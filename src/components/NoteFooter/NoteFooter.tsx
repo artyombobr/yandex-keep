@@ -4,11 +4,17 @@ import 'moment/locale/ru';
 import { connect } from 'react-redux';
 import Tags from '../Tags/Tags';
 import { fetchNoteToArchive, fetchEditNote } from '../../actions';
+import { TagsEntity } from '../../../server/src/shared';
+import './NoteFooter.scss';
 
 import { ReactComponent as Check } from '../Note/svg/check.svg';
 import { ReactComponent as Edit } from '../Note/svg/edit.svg';
 
-function NoteFooter(props: any) {
+interface IState {
+  tags: TagsEntity[];
+}
+
+export const NoteFooter = (props: any) => {
   const { note, tags, dispatch, setEdit, isEdit, data } = props;
   return (
     <div className="note__footer">
@@ -17,13 +23,22 @@ function NoteFooter(props: any) {
         {!note.archive && (
           <div className="icons">
             {!isEdit ? (
-              <button
-                className="icons__item"
-                type="button"
-                onClick={() => dispatch(fetchNoteToArchive(note.id))}
-              >
-                <Check />
-              </button>
+              <>
+                <button
+                  className="icons__item"
+                  type="button"
+                  onClick={() => dispatch(fetchNoteToArchive(note.id))}
+                >
+                  <Check />
+                </button>
+                <button
+                  className="icons__item"
+                  type="button"
+                  onClick={() => setEdit(!isEdit)}
+                >
+                  <Edit />
+                </button>
+              </>
             ) : (
               <button
                 className="modal__button"
@@ -36,22 +51,15 @@ function NoteFooter(props: any) {
                 {'Сохранить'}
               </button>
             )}
-            <button
-              className="icons__item"
-              type="button"
-              onClick={() => setEdit(!isEdit)}
-            >
-              <Edit />
-            </button>
           </div>
         )}
         {moment(note.created).fromNow()}
       </div>
     </div>
   );
-}
+};
 
-const mapStateToProps = (state: any) => {
+const mapStateToProps = (state: IState) => {
   return {
     tags: state.tags,
   };

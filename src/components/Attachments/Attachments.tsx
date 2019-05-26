@@ -1,16 +1,12 @@
-import * as React from 'react';
+import React from 'react';
+import linkCut from '../../helpers/linkCut';
+import './Attachments.scss';
+
 import { ReactComponent as Site } from '../Note/svg/site.svg';
 import { ReactComponent as Picture } from '../Note/svg/picture.svg';
 
-function Attachments(props: any) {
-  function linkCut(link: string) {
-    const pos = link.indexOf('://');
-    if (pos) {
-      return link.substr(pos + 3);
-    }
-    return link;
-  }
-  const { attachments } = props;
+const Attachments = (props: any) => {
+  const { attachments, isEdit } = props;
   const list = [];
   const listSites = [];
   const listImages = [];
@@ -37,22 +33,20 @@ function Attachments(props: any) {
       }
     }
   }
-  if (listSites.length) {
+  listSites.length &&
     list.push(
       <div className="sites" key={0}>
         {listSites}
       </div>
     );
-  }
-  if (listImages.length) {
+  listImages.length &&
     list.push(
       <div className="images" key={1}>
         <Picture className="images__icon" />
         <div className="images__list">{listImages}</div>
       </div>
     );
-  }
   return <>{list}</>;
-}
+};
 
 export default Attachments;

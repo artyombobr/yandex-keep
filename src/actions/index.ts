@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Dispatch } from 'redux';
 import {
   SET_ALL_NOTES,
   SET_COLORS,
@@ -9,14 +10,14 @@ import {
 } from './types';
 
 export const fetchAllNotes = () => {
-  return (dispatch: any) => {
+  return (dispatch: Dispatch) => {
     return axios
       .get('/api/cards')
       .then(response => {
         dispatch(setAllNotes(response.data));
         dispatch(setVisibleNotes(response.data));
       })
-      .catch((error: any) => {
+      .catch(error => {
         throw error;
       });
   };
@@ -29,7 +30,7 @@ export const fetchArchiveNotes = () => {
       .then(response => {
         dispatch(setArchiveNotes(response.data));
       })
-      .catch((error: any) => {
+      .catch(error => {
         throw error;
       });
   };
@@ -49,12 +50,14 @@ export const setArchiveNotes = (archiveNotes: any) => {
   };
 };
 
-export const fetchNoteToArchive = (id: any) => {
+export const fetchNoteToArchive = (id: number) => {
   return (dispatch: any) => {
     return axios
       .post('/api/cards/archive/' + id)
-      .then(dispatch(fetchAllNotes()))
-      .catch((error: any) => {
+      .then(response => {
+        dispatch(fetchAllNotes());
+      })
+      .catch(error => {
         throw error;
       });
   };
@@ -63,8 +66,10 @@ export const fetchNoteToArchive = (id: any) => {
 export const fetchAddNote = (note: any) => {
   return (dispatch: any) => {
     return axios
-      .post('/api/cards/', note)
-      .then(dispatch(fetchAllNotes()))
+      .post('/api/cards', note)
+      .then(response => {
+        dispatch(fetchAllNotes());
+      })
       .catch(error => {
         throw error;
       });
@@ -75,7 +80,9 @@ export const fetchEditNote = (id: any, note: any) => {
   return (dispatch: any) => {
     return axios
       .patch('/api/cards/' + id, note)
-      .then(dispatch(fetchAllNotes()))
+      .then(response => {
+        dispatch(fetchAllNotes());
+      })
       .catch(error => {
         throw error;
       });

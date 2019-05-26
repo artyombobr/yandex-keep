@@ -13,25 +13,35 @@
   }
 
   &__title {
-    background-color: transparent;
     border: none;
     outline: none;
     margin-bottom: 24px;
   }
 
   &__date {
+    margin-top: 10px;
     border: 2px solid #FC0;
     border-radius: 4px;
     padding: 2px;
   }
 
   &__button {
+    height: 28px;
     background-color: #FC0;
     border: none;
     outline: none;
-    padding: 5px;
+    padding: 4px;
     border-radius: 4px;
-    margin: 0 5px;
+    margin: 0 4px;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__type {
@@ -44,11 +54,21 @@
       outline: none;
       margin-bottom: 24px;
       resize: none;
-      background-color: transparent;
+    }
+
+    &_list {
+      cursor: pointer;
     }
 
     &_image {
       margin-left: 10px;
+      cursor: pointer;
     }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
   }
 }

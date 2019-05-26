@@ -5,9 +5,17 @@ import getSessionStorage from '../../helpers/getSessionStorage';
 import { ColorsEntity, NotesEntity } from '../../shared';
 import './Filter.scss';
 
-function Filter(props: any) {
-  const { colors, allNotes, dispatch, visibleNotes } = props;
+interface FilterProps extends State {
+  dispatch: Function;
+}
 
+interface State {
+  colors: ColorsEntity[];
+  allNotes: NotesEntity[];
+}
+
+export const Filter = (props: FilterProps) => {
+  const { colors, allNotes, dispatch } = props;
   const [activeFilter, setActiveFilter] = useState<number[]>(
     getSessionStorage('filter')
   );
@@ -35,9 +43,9 @@ function Filter(props: any) {
   }, [activeFilter, allNotes]);
 
   return (
-    <section className="tags">
-      <div className="tags__inner">
-        <h1 className="tags__title">Заметки</h1>
+    <section className="filters">
+      <div className="filters__inner">
+        <h1 className="filters__title">Заметки</h1>
         {colors &&
           colors.map((color: ColorsEntity) => {
             const styles = {
@@ -45,26 +53,25 @@ function Filter(props: any) {
             };
             const checked = activeFilter.indexOf(color.id) !== -1;
             return (
-              <label key={color.id} className="tag">
+              <label key={color.id} className="filter">
                 <input
                   type="checkbox"
                   checked={checked}
                   onChange={() => handleColorClick(color.id)}
                 />
-                <span className="tag__span" style={styles} />
+                <span className="filter__span" style={styles} />
               </label>
             );
           })}
       </div>
     </section>
   );
-}
+};
 
-const stateToProps = (state: any) => {
+const stateToProps = (state: State) => {
   return {
     colors: state.colors,
     allNotes: state.allNotes,
-    visibleNotes: state.visibleNotes,
   };
 };
 

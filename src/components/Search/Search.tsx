@@ -10,7 +10,7 @@ const options = {
   keys: ['title', 'text', 'attachments.url'],
 };
 
-const Search = (props: any) => {
+export const Search = (props: any) => {
   const { className, allNotes, dispatch } = props;
   const [text, setText] = useState('');
   useEffect(() => {

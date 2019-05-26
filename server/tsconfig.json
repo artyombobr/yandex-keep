@@ -13,6 +13,8 @@
     "typeRoots": ["node_modules/@types"]
   },
   "include": [
-    "src"
+    "src",
+    "../node_modules/@types/jest/index.d.ts",
+    "../../node_modules/@types/jest/index.d.ts"
   ]
 }

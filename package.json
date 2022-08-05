@@ -19,7 +19,7 @@
     "express-fileupload": "^1.1.4",
     "fuse.js": "^3.4.4",
     "moment": "^2.24.0",
-    "mongoose": "^5.5.1",
+    "mongoose": "^5.7.5",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-datepicker": "^2.4.0",
